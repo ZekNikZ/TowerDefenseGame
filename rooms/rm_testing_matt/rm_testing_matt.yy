@@ -1,6 +1,6 @@
 
 {
-    "name": "room0",
+    "name": "rm_testing_matt",
     "id": "a6d11afc-90a1-48ec-946a-2145d20c5109",
     "creationCodeFile": "",
     "inheritCode": false,
@@ -43,7 +43,7 @@
             "id": "e03e1fb8-7aec-43ef-a28b-a1f0f3b927d1",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
+            "colour": { "Value": 4283190348 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
