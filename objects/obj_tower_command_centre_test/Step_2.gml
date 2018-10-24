@@ -12,7 +12,9 @@ for(var i = 0; i < st_nodes_size; ++i) {
 	if (energy_to_distribute <= 0) break;
 }
 
-system_input = 0;
-system_output = 0;
+//system_input = 0;
+//system_output = 0;
 
 event_inherited();
+
+flag3 = true;

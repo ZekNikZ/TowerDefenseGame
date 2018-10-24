@@ -1,0 +1,1 @@
+move_towards_point(target_tower.x, target_tower.y, spd);

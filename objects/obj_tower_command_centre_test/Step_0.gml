@@ -1,4 +1,9 @@
 energy_to_use = system_input;
+energy_to_retrieve = 0;
+
+if (keyboard_check_pressed(vk_space)) {
+	energy_to_retrieve = 0;
+}
 
 if (system_output > system_input) {
 	energy_to_retrieve = system_output - system_input;
@@ -22,7 +27,7 @@ for(var i = 0; i < ot_nodes_size; ++i) {
 	if (el.ot_used_energy > 0) {
 		with (el) {
 			if (is_storage_node) {
-				var self_used = min(ot_used_energy, st_current_storage);
+				self_used = min(ot_used_energy, st_current_storage);
 				ot_used_energy -= self_used;
 			}
 		}
@@ -38,3 +43,5 @@ for(var i = 0; i < ot_nodes_size; ++i) {
 	}
 	if (energy_to_use <= 0) break;
 }
+
+flag2 = true;
