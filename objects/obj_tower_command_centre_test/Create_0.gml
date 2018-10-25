@@ -10,3 +10,8 @@ node_setup(id);
 
 system_input = 0;
 system_output = 0;
+
+//debug
+flag1 = false;
+flag2 = false;
+flag3 = false;
