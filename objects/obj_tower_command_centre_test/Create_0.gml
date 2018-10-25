@@ -12,3 +12,8 @@ system_input = 0;
 system_output = 0;
 energy_to_use = 0;
 surge_energy = 0;
+
+hp = 100;
+hp_max = 100;
+
+st_current_storage = 500;
