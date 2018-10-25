@@ -15,14 +15,13 @@ with(obj_cursor) {
 				break;
 		}
 		
-		if instance_exists(nearest_tower) && point_distance(x,y,nearest_tower.x,nearest_tower.y) < nearest_tower.range {
-		can_place = true;
-		place_tower();
-		break;
-		}
-		else {
-		sprite_index = spr_no_power;
-		can_place = false;
+		if (instance_exists(nearest_tower) && point_distance(x,y,nearest_tower.x,nearest_tower.y) < nearest_tower.range) {
+			can_place = true;
+			place_tower();
+			break;
+		} else {
+			sprite_index = spr_no_power;
+			can_place = false;
 		}
 	}
 }
