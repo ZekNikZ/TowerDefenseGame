@@ -1,4 +1,4 @@
-/*if (is_output_node && step_ot_activated) {
+if (is_output_node && step_ot_activated) {
 	if (target_enemy != noone && instance_exists(target_enemy)) {
 		with (target_enemy) {
 			var inst = instance_create_layer(other.x, other.y, "Instances", obj_laser);
@@ -9,7 +9,7 @@
 	} else {
 		st_current_storage += 500;
 	}
-}*/
+}
 
 event_inherited();
 

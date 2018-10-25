@@ -1,5 +1,5 @@
 spawn_counter = 60 * 2;
-spawn_counter_max = 60 * 2;
+spawn_counter_max = 60 * 1;
 
 spawn_radius = 600;
 

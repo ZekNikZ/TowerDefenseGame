@@ -1,10 +1,6 @@
 energy_to_use = system_input;
 energy_to_retrieve = 0;
 
-if (keyboard_check_pressed(vk_space)) {
-	energy_to_retrieve = 0;
-}
-
 if (system_output > system_input) {
 	energy_to_retrieve = system_output - system_input;
 	
@@ -44,4 +40,4 @@ for(var i = 0; i < ot_nodes_size; ++i) {
 	if (energy_to_use <= 0) break;
 }
 
-flag2 = true;
+surge_energy = max(0, energy_to_use - system_input);
