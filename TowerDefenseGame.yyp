@@ -438,6 +438,25 @@
             }
         },
         {
+            "Key": "3b919d46-29b6-45c8-822c-6285683fc387",
+            "Value": {
+                "id": "603b2bad-99f4-4fa3-94fe-2a4df0a52874",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "scripts\/place_tower\/place_tower.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "40f607f7-8916-463d-9b29-aa917a28af7a",
             "Value": {
                 "id": "26e240bb-57d1-42ec-8e4a-42eb0fe379f6",
@@ -1228,7 +1247,8 @@
         "8de78de6-a0a0-43d8-932f-bb558fac99b2",
         "74cac4d6-4c25-45c4-bdef-ac8aa9a2fe0b",
         "fde5d72b-03d0-4d96-a759-6161bdbd6df2",
-        "0b0e590e-484d-4576-8c18-373eb872d60b"
+        "0b0e590e-484d-4576-8c18-373eb872d60b",
+        "3b919d46-29b6-45c8-822c-6285683fc387"
     ],
     "tutorial": ""
 }
