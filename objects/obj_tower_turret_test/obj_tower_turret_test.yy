@@ -54,9 +54,17 @@
             "objectId": "d9d41547-d8db-4669-868b-9554aab12d6a",
             "propertyId": "9c4ff1b6-e7f1-4742-98ae-8e3daa1ad728",
             "value": "50"
+        },
+        {
+            "id": "152071c9-ba97-48e7-a210-b612c105f4ce",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "f7aba2f6-90b4-43a3-8aff-bbc07f5c5989",
+            "propertyId": "afb41bec-3cf1-4c27-84a2-02a4a879323b",
+            "value": "150"
         }
     ],
-    "parentObjectId": "d9d41547-d8db-4669-868b-9554aab12d6a",
+    "parentObjectId": "f7aba2f6-90b4-43a3-8aff-bbc07f5c5989",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

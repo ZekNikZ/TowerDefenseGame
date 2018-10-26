@@ -1,43 +1,23 @@
 {
-    "id": "d9d41547-d8db-4669-868b-9554aab12d6a",
+    "id": "f7aba2f6-90b4-43a3-8aff-bbc07f5c5989",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_node_prt",
+    "name": "obj_turret_prt",
     "eventList": [
         {
-            "id": "328e280a-68d9-4fc6-90e2-92da597ad987",
+            "id": "197b8fec-d3cb-4fe1-b19d-b511a8e38cb9",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 1,
             "eventtype": 3,
-            "m_owner": "d9d41547-d8db-4669-868b-9554aab12d6a"
-        },
-        {
-            "id": "571b6cc5-4ae2-48e2-9e42-87f0acb3fc13",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "d9d41547-d8db-4669-868b-9554aab12d6a"
-        },
-        {
-            "id": "c2c8a862-d6e5-4a27-953b-70df6c6aa79f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 2,
-            "eventtype": 3,
-            "m_owner": "d9d41547-d8db-4669-868b-9554aab12d6a"
+            "m_owner": "f7aba2f6-90b4-43a3-8aff-bbc07f5c5989"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "parentObjectId": "d9d41547-d8db-4669-868b-9554aab12d6a",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -53,7 +33,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "9c4ff1b6-e7f1-4742-98ae-8e3daa1ad728",
+            "id": "abe2b02c-32c4-4d9d-92e3-9fe31045f8a3",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -63,7 +43,21 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "0",
-            "varName": "place_range",
+            "varName": "rate_of_fire",
+            "varType": 0
+        },
+        {
+            "id": "afb41bec-3cf1-4c27-84a2-02a4a879323b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "attack_range",
             "varType": 0
         }
     ],

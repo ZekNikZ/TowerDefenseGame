@@ -15,7 +15,10 @@ with(obj_cursor) {
 				break;
 		}
 		
-		if (instance_exists(nearest_tower) && point_distance(x,y,nearest_tower.x,nearest_tower.y) < nearest_tower.range) {
+		if (place_meeting(x,y,obj_node_prt)) {
+			can_place = false;
+			sprite_index = spr_too_close;
+		} else if (instance_exists(nearest_tower) && point_distance(x,y,nearest_tower.x,nearest_tower.y) < nearest_tower.place_range) {
 			can_place = true;
 			place_tower();
 			break;
@@ -23,6 +26,8 @@ with(obj_cursor) {
 			sprite_index = spr_no_power;
 			can_place = false;
 		}
+		
+		
 	}
 }
 
