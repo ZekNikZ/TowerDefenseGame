@@ -39,6 +39,25 @@
     },
     "resources": [
         {
+            "Key": "0115a420-e36e-4b5d-b9b1-392767f4a7ec",
+            "Value": {
+                "id": "abe0c4f6-4301-4e4a-9a95-a3f76ce6c38b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_fow\/obj_fow.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0540a717-bed0-486c-8f2a-f7110c35ca6b",
             "Value": {
                 "id": "6fd5247f-75e2-4885-b412-7d338ac01462",
@@ -112,6 +131,25 @@
                 ],
                 "resourcePath": "views\/07f8d5f6-4038-4d2f-9bfd-d85c039bf88e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "08fc40ab-0111-4869-9e54-b6cc372ee886",
+            "Value": {
+                "id": "c8a57b35-2379-4a8f-9ae6-2c45b7749eee",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_ts_world\/spr_ts_world.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -533,6 +571,25 @@
             }
         },
         {
+            "Key": "3f903f36-476a-434e-9cb4-5a1e9d1b0efc",
+            "Value": {
+                "id": "586a09c0-dd27-462b-895b-c719c36a956a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "tilesets\/tileset0\/tileset0.yy",
+                "resourceType": "GMTileSet"
+            }
+        },
+        {
             "Key": "40f607f7-8916-463d-9b29-aa917a28af7a",
             "Value": {
                 "id": "26e240bb-57d1-42ec-8e4a-42eb0fe379f6",
@@ -625,6 +682,25 @@
                 ],
                 "resourcePath": "views\/593a9b2d-c943-4d6b-ade8-4cd99559131d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "65fbceb1-6bc0-48c0-8b46-bc1412fea563",
+            "Value": {
+                "id": "3cfb1ef2-6bdf-453a-9dec-9ec966aa5c6b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "shaders\/sdr_fow\/sdr_fow.yy",
+                "resourceType": "GMShader"
             }
         },
         {
@@ -834,6 +910,25 @@
                 ],
                 "resourcePath": "sprites\/spr_debug_node_icon_transfer\/spr_debug_node_icon_transfer.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8d4071d1-e0c8-4646-a83d-e557c9d9a3f6",
+            "Value": {
+                "id": "7d936063-e4ec-486e-9b1e-b198c2f488af",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_ui\/obj_ui.yy",
+                "resourceType": "GMObject"
             }
         },
         {

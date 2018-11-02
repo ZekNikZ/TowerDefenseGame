@@ -29,3 +29,9 @@ if (is_storage_node) {
 	icon_offset += 17;
 	
 }
+
+surface_set_target(obj_fow.surf);
+gpu_set_blendmode(bm_max);
+draw_circle_color(x, y, place_range + 100, c_white, c_black, false);
+gpu_set_blendmode(bm_normal);
+surface_reset_target();

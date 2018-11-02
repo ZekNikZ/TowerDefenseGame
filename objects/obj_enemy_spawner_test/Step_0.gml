@@ -5,5 +5,6 @@ if (spawn_counter < 0) {
 	
 	instance_create_layer(origin_object.x + lengthdir_x(spawn_radius, angle), origin_object.y + lengthdir_y(spawn_radius, angle), "Instances", obj_enemy);
 	
-	spawn_counter = spawn_counter_max;
+	spawn_counter = ceil(spawn_counter_max - spawn_counter_max / spawned_count_max * spawned_count);
+	spawned_count++;
 }
