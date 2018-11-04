@@ -29,7 +29,8 @@ with(obj_cursor){
 				instance_create_layer(x,y,"Instances", obj_tower_turret_test);
 				break;
 		}
-		
+		mode = CursorMode.SELECT;
+		sprite_index = noone;
 	}
 	
 }

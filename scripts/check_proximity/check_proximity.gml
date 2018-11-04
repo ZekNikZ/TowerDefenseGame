@@ -1,5 +1,5 @@
 with(obj_cursor) {
-	for(proximity_check_type = 1; proximity_check_type <= 4; proximity_check_type++) {
+	for(var proximity_check_type = 1; proximity_check_type <= 4; proximity_check_type++) {
 		switch(proximity_check_type) {
 			case 1: 
 				nearest_tower = instance_nearest(x,y,obj_tower_command_centre_test);

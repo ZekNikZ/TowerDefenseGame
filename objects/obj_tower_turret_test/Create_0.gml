@@ -1,4 +1,4 @@
-mark_as_node();
+mark_as_node("Laser Turret", "This turret fires lasers at incoming\nenemies. It draws energy as lasers\nare fired.", spr_type_unknown, 3000);
 
 mark_as_output_node();
 mark_as_transfer_node();

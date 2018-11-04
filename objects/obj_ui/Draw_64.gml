@@ -1,43 +1,149 @@
-var bottom_height = 0.2;
-var side_width = 0.1;
-var minimap_size = 0.15;
-var minimap_border = 3;
-var game_controls_width = 0.25;
-
 width = window_get_width();
 height = window_get_height();
 
-// Draw bottom rectangle
+// Bottom rectangle
 draw_set_color(c_black);
 draw_set_alpha(0.5);
-draw_rectangle(0, height - bottom_height * height, width, height, false);
+draw_rectangle(game_controls_width * width, height - bottom_height * height, width, height, false);
 
+// Side rectangle
 draw_rectangle(width - side_width * width, 0, width, height - bottom_height * height - 1, false);
 
-draw_rectangle(0, height - bottom_height * height, game_controls_width * width, height, false);
+// Game Controls
+draw_rectangle(0, height - bottom_height * height, game_controls_width * width - 1, height, false);
 
+// Selected Tower Info
+if (selected_tower != -1) {
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+	
+	var scale = (bottom_height * height - 2 * selected_tower_sprite_padding * width) / sprite_get_height(selected_tower.sprite_index);
+	var ox = sprite_get_width(selected_tower.sprite_index) / 2 * scale;
+	var oy = sprite_get_height(selected_tower.sprite_index) / 2 * scale;
+	
+	var zx = game_controls_width * width + selected_tower_sprite_padding * width;
+	var zy = height - bottom_height * height + selected_tower_sprite_padding * width;
+	
+	var tx = zx + ox * 2 + selected_tower_sprite_padding * width;
+	
+	var ax = tx + 300;
+	
+	// Icon
+	draw_sprite_ext(selected_tower.sprite_index, -1, zx + ox, zy + oy, scale, scale, selected_tower.image_angle, c_white, 1);
+	
+	// Text
+	draw_set_font(fnt_ui_tower_name);
+	draw_text(tx, zy, selected_tower.tower_name); 
+	
+	draw_set_font(fnt_ui_tower_desc);
+	draw_text(tx, zy + 26, selected_tower.tower_desc); 
+	
+	draw_set_font(fnt_ui_tower_attr);
+	
+	var icon_offset = 0;
+	
+	// Health
+	if (selected_tower.is_health_node) {
+		draw_sprite_ext(spr_debug_node_icon_health, -1, ax, zy + icon_offset, 3, 3, 0, c_white, 1);
+		draw_text(ax + 30, zy + icon_offset, string(selected_tower.hp) + " / " + string(selected_tower.hp_max));
+		icon_offset += 30;
+	}
+	
+	// Storage
+	if (selected_tower.is_storage_node) {
+		draw_sprite_ext(spr_debug_node_icon_storage, -1, ax, zy + icon_offset, 3, 3, 0, c_white, 1);
+		draw_text(ax + 30, zy + icon_offset, string(selected_tower.st_current_storage) + " / " + string(selected_tower.st_capacity) + " (" + string(selected_tower.st_priority) + ")");
+		icon_offset += 30;
+	}
+	
+	// Input
+	if (selected_tower.is_input_node) {
+		draw_sprite_ext(spr_debug_node_icon_input, -1, ax, zy + icon_offset, 3, 3, 0, c_white, 1);
+		draw_text(ax + 30, zy + icon_offset, selected_tower.step_generated_energy);
+		icon_offset += 30;
+	}
+	
+	// Output
+	if (selected_tower.is_output_node) {
+		draw_sprite_ext(spr_debug_node_icon_input, -1, ax, zy + icon_offset, 3, 3, 0, c_white, 1);
+		draw_text(ax + 30, zy + icon_offset, selected_tower.step_used_energy);
+		icon_offset += 30;
+	}
+}
 
+draw_set_color(c_white);
+draw_set_alpha(1);
+draw_set_font(fnt_ui_tower_attr);
+	
+// Network information
+draw_sprite_ext(spr_debug_node_icon_energy, -1, width - side_width * width + 3, 10, 1.5, 1.5, 0, c_white, 1);
+draw_text(width - side_width * width + 33, 10, obj_tower_command_centre_test.system_total_storage);
+
+draw_sprite_ext(spr_debug_node_icon_health, -1, width - side_width * width + 3, 40, 3, 3, 0, c_white, 1);
+draw_text(width - side_width * width + 33, 40, string(obj_tower_command_centre_test.hp));
+
+// Tower buttons
+var click = mouse_check_button_pressed(mb_left) && window_mouse_get_x() > width - side_width * width;
+var tower_button_offset = 0;
+for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
+	var zx = width - side_width * width;
+	var zy = 80 + tower_button_offset;
+	var scale = (side_width * width - tower_button_sprite_padding * 2 * width) / sprite_get_width(unlocked_towers_icons[| i]);
+	var ox = sprite_get_width(unlocked_towers_icons[| i]) / 2 * scale;
+	var oy = sprite_get_height(unlocked_towers_icons[| i]) / 2 * scale;
+	
+	draw_sprite_ext(unlocked_towers_icons[| i], -1, zx + tower_button_sprite_padding * width + ox, zy + oy, scale, scale, 0, c_white, 1);
+	
+	draw_sprite_ext(spr_debug_node_icon_energy, -1, zx + tower_button_sprite_padding * width, zy + oy * 2 + 5, 1.5, 1.5, 0, c_white, 1);
+	
+	if (unlocked_towers_costs[| i] <= obj_tower_command_centre_test.system_total_storage) {
+		draw_set_color(c_white);
+
+		// Tower button checking
+		if (click) {
+			if (zy <= window_mouse_get_y() && window_mouse_get_y() <= zy + oy * 2 + 30) {
+				obj_cursor.tower_type = i + 2;
+				obj_cursor.mode = CursorMode.PLACE;
+			}
+		}
+	} else {
+		draw_set_color(c_red);
+	}
+	
+	draw_text(zx + tower_button_sprite_padding * width + 27, zy + oy * 2 + 5, unlocked_towers_costs[| i]);
+	
+	tower_button_offset += oy * 2 + 35;
+}
+
+// Minimap
 draw_set_color(c_black);
 draw_set_alpha(1);
 draw_rectangle(0, 0, 2 * minimap_border + minimap_size * width, 2 * minimap_border + minimap_size * width, false);
-
-//view_set_wport(2, 4096);
-//view_set_hport(2, 4096);
-//view_enabled[1] = true;
-//view_wport[1] = 4096;
-//view_hport[1] = 4096;
 
 if (!surface_exists(surf)) {
     surf = surface_create(camera_get_view_width(view_camera[1]), camera_get_view_height(view_camera[1]));
     view_surface_id[1] = surf;
 }
 
-
 if (surface_exists(surf)) {
-	//draw_surface(surf, 3, 3);
+	var cx = camera_get_view_x(view_camera[0]);
+	var cy = camera_get_view_y(view_camera[0]);
+	var cw = camera_get_view_width(view_camera[0]);
+	var ch = camera_get_view_height(view_camera[0]);
+	var border = 32;
+	
+	draw_set_color(c_white);
+	draw_set_alpha(1);
+	
+	surface_set_target(surf);
+	draw_rectangle(cx, cy, cx + cw, cy + border, false);
+	draw_rectangle(cx, cy + ch, cx + cw, cy + ch - border, false);
+	draw_rectangle(cx, cy, cx + border, cy + ch, false);
+	draw_rectangle(cx + cw, cy, cx + cw - border, cy + ch, false);
+	surface_reset_target();
+	
 	draw_surface_stretched(surf, minimap_border, minimap_border, minimap_size * width, minimap_size * width);
 }
-
 
 // Reset colors
 draw_set_color(c_white);
