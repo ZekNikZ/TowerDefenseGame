@@ -154,7 +154,7 @@
             "Key": "190d3afa-4d39-4d6c-82ff-2021147fa874",
             "Value": {
                 "id": "c518a660-6867-4592-8234-500304e21742",
-                "resourcePath": "objects\\obj_perlin_testing\\obj_perlin_testing.yy",
+                "resourcePath": "objects\\obj_room_setup\\obj_room_setup.yy",
                 "resourceType": "GMObject"
             }
         },

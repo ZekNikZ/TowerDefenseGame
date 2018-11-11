@@ -15,7 +15,9 @@ with(obj_cursor) {
 				break;
 		}
 		
-		if (place_meeting(x,y,obj_node_prt)) {
+		var tilemap_id = layer_tilemap_get_id("lyr_terrain");
+		
+		if (place_meeting(x,y,obj_node_prt) || tile_get_index(tilemap_get_at_pixel(tilemap_id, x, y)) >= 4) {
 			can_place = false;
 			sprite_index = spr_too_close;
 		} else if (tower_cost <= obj_tower_command_centre_test.system_total_storage && instance_exists(nearest_tower) && point_distance(x,y,nearest_tower.x,nearest_tower.y) < nearest_tower.place_range) {

@@ -1,5 +1,7 @@
 draw_self();
 
+/*
+
 var icon_offset = 0;
 
 draw_set_font(fnt_small_debug);
@@ -36,6 +38,8 @@ if (is_storage_node) {
 	icon_offset += 17;
 	
 }
+
+*/
 
 surface_set_target(obj_fow.surf);
 gpu_set_blendmode(bm_max);
