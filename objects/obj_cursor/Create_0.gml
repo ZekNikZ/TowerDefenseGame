@@ -13,5 +13,3 @@ enum CursorMode {
 }
 
 mode = CursorMode.SELECT;
-
-camera_move_speed = 25;

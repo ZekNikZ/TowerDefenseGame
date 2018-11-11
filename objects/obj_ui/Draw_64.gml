@@ -98,16 +98,17 @@ for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
 	
 	if (unlocked_towers_costs[| i] <= obj_tower_command_centre_test.system_total_storage) {
 		draw_set_color(c_white);
-
-		// Tower button checking
-		if (click) {
-			if (zy <= window_mouse_get_y() && window_mouse_get_y() <= zy + oy * 2 + 30) {
-				obj_cursor.tower_type = i + 2;
-				obj_cursor.mode = CursorMode.PLACE;
-			}
-		}
 	} else {
 		draw_set_color(c_red);
+	}
+
+	// Tower button checking
+	if (click) {
+		if (zy <= window_mouse_get_y() && window_mouse_get_y() <= zy + oy * 2 + 30) {
+			obj_cursor.tower_type = i + 2;
+			obj_cursor.mode = CursorMode.PLACE;
+			obj_cursor.tower_cost = unlocked_towers_costs[|i ];
+		}
 	}
 	
 	draw_text(zx + tower_button_sprite_padding * width + 27, zy + oy * 2 + 5, unlocked_towers_costs[| i]);

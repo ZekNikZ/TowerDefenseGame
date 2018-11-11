@@ -27,3 +27,11 @@ minimap_border = 3;
 game_controls_width = 0.25;
 selected_tower_sprite_padding = 0.01;
 tower_button_sprite_padding = 0.02;
+
+view_scale_speed = 60;
+view_width_min = 512;
+view_width = 1024;
+view_width_initial = view_width;
+view_width_max = 2048;
+
+camera_move_speed = 25;
