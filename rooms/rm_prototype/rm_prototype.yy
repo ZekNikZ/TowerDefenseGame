@@ -76,7 +76,7 @@
         },
         {
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
-            "name": "Background",
+            "name": "lyr_terrain",
             "id": "68e9bc7f-ed70-4c6d-90da-a8699eb319ff",
             "depth": 200,
             "grid_x": 32,
