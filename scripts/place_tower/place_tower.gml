@@ -17,16 +17,16 @@ with(obj_cursor){
 	if(can_place) && (click) {
 		switch(tower_type) {
 			case 1: 
-				instance_create_layer(x,y,"Instances", obj_tower_command_centre_test);
+				instance_create_layer(x,y,"lyr_towers", obj_tower_command_centre_test);
 				break;
 			case 2:
-				instance_create_layer(x,y,"Instances", obj_tower_battery_test);
+				instance_create_layer(x,y,"lyr_towers", obj_tower_battery_test);
 				break;
 			case 3:
-				instance_create_layer(x,y,"Instances", obj_tower_solar_collector_test);
+				instance_create_layer(x,y,"lyr_towers", obj_tower_solar_collector_test);
 				break;
 			case 4:
-				instance_create_layer(x,y,"Instances", obj_tower_turret_test);
+				instance_create_layer(x,y,"lyr_towers", obj_tower_turret_test);
 				break;
 		}
 		mode = CursorMode.SELECT;

@@ -40,4 +40,4 @@ while (!placed) {
 	A = random_range(0, 360);
 }
 
-camera_set_up = false;
+alarm_set(0, 2);

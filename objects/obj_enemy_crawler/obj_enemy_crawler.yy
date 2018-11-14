@@ -2,7 +2,7 @@
     "id": "0c935d2a-24ce-49bb-b45b-6a911558b4a6",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_enemy",
+    "name": "obj_enemy_crawler",
     "eventList": [
         {
             "id": "cf775d2f-c412-431f-9677-7638a167aefa",

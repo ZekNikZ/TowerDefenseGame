@@ -7,6 +7,9 @@ mark_as_health_node(120);
 
 mark_as_parent_node();
 
+system_center_x = x;
+system_center_y = y;
+system_max_radius = 0;
 node_setup(id);
 
 system_input = 0;
@@ -15,4 +18,4 @@ system_total_storage = 0;
 energy_to_use = 0;
 surge_energy = 0;
 
-st_current_storage = 500;
+st_current_storage = 500000;

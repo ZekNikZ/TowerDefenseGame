@@ -1,1 +1,0 @@
-if (!camera_set_up) camera_set_view_pos(view_camera[0], obj_tower_command_centre_test.x - camera_get_view_width(view_camera[0]) / 2 + 32, obj_tower_command_centre_test.y - camera_get_view_height(view_camera[0]) / 2 + 32);

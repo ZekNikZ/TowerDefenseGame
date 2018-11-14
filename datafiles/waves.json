@@ -1,0 +1,18 @@
+{
+    "waves": [
+        {
+            "enemies": {
+                "crawler": 20
+            },
+            "spawn_timer": 5,
+            "wave_time": 60
+        },
+        {
+            "enemies": {
+                "crawler": 35
+            },
+            "spawn_timer": 5,
+            "wave_time": 90
+        }
+    ]
+}

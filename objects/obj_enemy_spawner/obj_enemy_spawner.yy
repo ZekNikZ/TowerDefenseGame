@@ -2,7 +2,7 @@
     "id": "1f372852-89d4-4a33-b65d-69d6c7cfe50d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_enemy_spawner_test",
+    "name": "obj_enemy_spawner",
     "eventList": [
         {
             "id": "7179b751-7739-414b-b2fd-812caad44e1f",
@@ -22,6 +22,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "1f372852-89d4-4a33-b65d-69d6c7cfe50d"
+        },
+        {
+            "id": "31070a10-d160-42c7-aa6c-514e4d5be545",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 2,
             "m_owner": "1f372852-89d4-4a33-b65d-69d6c7cfe50d"
         }
     ],
