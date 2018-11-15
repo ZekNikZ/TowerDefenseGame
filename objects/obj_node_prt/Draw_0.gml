@@ -1,6 +1,5 @@
 draw_self();
 
-/*
 
 var icon_offset = 0;
 
@@ -39,7 +38,7 @@ if (is_storage_node) {
 	
 }
 
-*/
+
 
 surface_set_target(obj_fow.surf);
 gpu_set_blendmode(bm_max);

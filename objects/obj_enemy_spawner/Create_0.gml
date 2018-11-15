@@ -1,10 +1,3 @@
-spawn_counter = 60 * 2;
-spawn_counter_max = 60 * 1;
-spawned_count = 0;
-spawned_count_max = 120;
-
-spawn_radius_add = 500;
-
 origin_object = obj_tower_command_centre_test;
 
 enum WAVE_STATE {
@@ -19,7 +12,7 @@ wave_num = 0;
 wave_state = WAVE_STATE.BETWEEN;
 between_wave_time = 15 * 60;
 
-globalvar WAVE_ALARM;
+SPAWN_ALARM = 1;
 WAVE_ALARM = 0;
 
 var theJsonFile = file_text_open_read("waves.json");
@@ -39,3 +32,5 @@ alarm_set(WAVE_ALARM, between_wave_time);
 spawn_index = 0;
 spawn_count = 0;
 spawn_complete = true;
+spawn_radius_add = 500;
+spawn_cooldown = 0;

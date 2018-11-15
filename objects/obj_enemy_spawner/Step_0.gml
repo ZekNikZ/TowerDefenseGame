@@ -12,7 +12,7 @@ if (spawn_counter < 0) {
 */
 
 
-
+/*
 if (!spawn_complete) {
 	if (wave_num < ds_list_size(wave_info)) {
 		var wave_enemies = ds_map_find_value(wave_info[| wave_num], "enemies");
@@ -34,9 +34,10 @@ if (!spawn_complete) {
 			}
 		} else {
 			spawn_complete = true;
-			alarm_set(WAVE_ALARM, ds_map_find_value(wave_info[| wave_num], "spawn_time"));
+			alarm_set(SPAWN_ALARM, ds_map_find_value(wave_info[| wave_num], "spawn_time"));
 		}
 	} else {
 		spawn_complete = true;
 	}
 }
+*/

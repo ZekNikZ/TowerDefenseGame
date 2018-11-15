@@ -30,4 +30,8 @@ for(var i = 0; i < st_nodes_size; ++i) {
 system_input = 0;
 system_output = 0;
 
+if (step_ot_activated) {
+	tower_cost_deduction = 0;
+}
+
 event_inherited();

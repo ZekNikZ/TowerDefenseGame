@@ -9,7 +9,7 @@ for(var i = 0; i < ds_list_size(controller.system_nodes); ++i) {
 }
 controller.system_center_x /= ds_list_size(controller.system_nodes);
 controller.system_center_y /= ds_list_size(controller.system_nodes);
-controller.system_max_radius = max(controller.system_max_radius, distance_to_object(controller));
+controller.system_max_radius = max(controller.system_max_radius, point_distance(controller.x, controller.y, x, y));
 
 if (is_input_node) {
 	ds_list_add(controller.in_nodes, id);

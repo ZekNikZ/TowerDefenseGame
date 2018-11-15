@@ -65,7 +65,7 @@ if (selected_tower != -1) {
 	
 	// Output
 	if (selected_tower.is_output_node) {
-		draw_sprite_ext(spr_debug_node_icon_input, -1, ax, zy + icon_offset, 3, 3, 0, c_white, 1);
+		draw_sprite_ext(spr_debug_node_icon_output, -1, ax, zy + icon_offset, 3, 3, 0, c_white, 1);
 		draw_text(ax + 30, zy + icon_offset, selected_tower.step_used_energy);
 		icon_offset += 30;
 	}
@@ -108,6 +108,7 @@ for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
 			obj_cursor.tower_type = i + 2;
 			obj_cursor.mode = CursorMode.PLACE;
 			obj_cursor.tower_cost = unlocked_towers_costs[|i ];
+			show_debug_message(obj_cursor.tower_cost);
 		}
 	}
 	
