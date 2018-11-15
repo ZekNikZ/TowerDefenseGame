@@ -3,7 +3,7 @@ spawn_counter_max = 60 * 1;
 spawned_count = 0;
 spawned_count_max = 120;
 
-spawn_radius_add = 300;
+spawn_radius_add = 500;
 
 origin_object = obj_tower_command_centre_test;
 
@@ -17,7 +17,7 @@ WAVE_STATES = 3;
 
 wave_num = 0;
 wave_state = WAVE_STATE.BETWEEN;
-between_wave_time = 15 * fps;
+between_wave_time = 15 * 60;
 
 globalvar WAVE_ALARM;
 WAVE_ALARM = 0;
@@ -38,6 +38,4 @@ alarm_set(WAVE_ALARM, between_wave_time);
 
 spawn_index = 0;
 spawn_count = 0;
-spawn_complete = false;
-
-show_debug_message(ds_map_find_value(wave_info[| wave_num], "spawn_time"));
+spawn_complete = true;

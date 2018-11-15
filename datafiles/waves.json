@@ -1,17 +1,23 @@
 {
     "waves": [
         {
-            "enemies": {
-                "crawler": 20
-            },
-            "spawn_timer": 5,
+            "enemies": [
+                {
+                    "type": "crawler",
+                    "count": 20
+                }
+            ],
+            "spawn_time": 5,
             "wave_time": 60
         },
         {
-            "enemies": {
-                "crawler": 35
-            },
-            "spawn_timer": 5,
+            "enemies": [
+                {
+                    "type": "crawler",
+                    "count": 35
+                }
+            ],
+            "spawn_time": 5,
             "wave_time": 90
         }
     ]

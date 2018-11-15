@@ -18,4 +18,4 @@ system_total_storage = 0;
 energy_to_use = 0;
 surge_energy = 0;
 
-st_current_storage = 500000;
+st_current_storage = 500;
