@@ -1,4 +1,4 @@
-origin_object = obj_tower_command_centre_test;
+origin_object = obj_tower_command_center;
 
 enum WAVE_STATE {
 	BETWEEN,

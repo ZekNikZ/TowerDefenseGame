@@ -7,16 +7,16 @@ unlocked_towers_objs = ds_list_create();
 unlocked_towers_icons = ds_list_create();
 unlocked_towers_costs = ds_list_create();
 
-ds_list_add(unlocked_towers_objs, obj_tower_battery_test);
-ds_list_add(unlocked_towers_icons, spr_tower_battery_test);
+ds_list_add(unlocked_towers_objs, obj_tower_battery);
+ds_list_add(unlocked_towers_icons, spr_tower_battery);
 ds_list_add(unlocked_towers_costs, 2000);
 
-ds_list_add(unlocked_towers_objs, obj_tower_solar_collector_test);
-ds_list_add(unlocked_towers_icons, spr_tower_solar_collector_test);
+ds_list_add(unlocked_towers_objs, obj_tower_solar_collector);
+ds_list_add(unlocked_towers_icons, spr_tower_solar_collector);
 ds_list_add(unlocked_towers_costs, 1000);
 
-ds_list_add(unlocked_towers_objs, obj_tower_turret_test);
-ds_list_add(unlocked_towers_icons, spr_tower_turret_test);
+ds_list_add(unlocked_towers_objs, obj_tower_turret);
+ds_list_add(unlocked_towers_icons, spr_tower_turret);
 ds_list_add(unlocked_towers_costs, 3000);
 
 

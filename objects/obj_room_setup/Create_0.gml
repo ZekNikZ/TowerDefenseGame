@@ -23,14 +23,14 @@ while (!placed) {
 	if (tile_get_index(tilemap_get_at_pixel(tilemap_id, X + lengthdir_x(R, A), Y + lengthdir_y(R, A))) < 4 &&
 	    tile_get_index(tilemap_get_at_pixel(tilemap_id, X + lengthdir_x(R, A) - 128, Y + lengthdir_y(R, A))) < 4 &&
 		tile_get_index(tilemap_get_at_pixel(tilemap_id, X + lengthdir_x(R, A) + 128, Y + lengthdir_y(R, A))) < 4) {
-		instance_create_layer(X, Y, "lyr_towers", obj_tower_command_centre_test);
+		instance_create_layer(X, Y, "lyr_towers", obj_tower_command_center);
 
 		if (random(1) < 0.5) {
-			instance_create_layer(X - 128, Y, "lyr_towers", obj_tower_solar_collector_test);
-			instance_create_layer(X + 128, Y, "lyr_towers", obj_tower_turret_test);
+			instance_create_layer(X - 128, Y, "lyr_towers", obj_tower_solar_collector);
+			instance_create_layer(X + 128, Y, "lyr_towers", obj_tower_turret);
 		} else {
-			instance_create_layer(X + 128, Y, "lyr_towers", obj_tower_solar_collector_test);
-			instance_create_layer(X - 128, Y, "lyr_towers", obj_tower_turret_test);
+			instance_create_layer(X + 128, Y, "lyr_towers", obj_tower_solar_collector);
+			instance_create_layer(X - 128, Y, "lyr_towers", obj_tower_turret);
 		}
 		
 		placed = true;

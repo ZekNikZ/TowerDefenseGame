@@ -8,7 +8,7 @@
         "242369a2-4d6a-43ae-86ce-f1961fec0d2e"
     ],
     "filterType": "GMSprite",
-    "folderName": "types",
+    "folderName": "tower_types",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
