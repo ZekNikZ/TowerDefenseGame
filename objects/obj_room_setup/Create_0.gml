@@ -1,9 +1,25 @@
 srcSetup();
 
-ca = 85;
-cg = 155;
-cy = 165;
-cb = 185;
+switch (game_world) {
+	case World.NORMAL:
+		ca = 85;
+		cg = 155;
+		cy = 165;
+		cb = 185;
+		break;
+	case World.DRY:
+		ca = 90;
+		cg = 160;
+		cy = 180;
+		cb = 200;
+		break;
+	case World.WET:
+		ca = 80;
+		cg = 140;
+		cy = 150;
+		cb = 170;
+		break;
+}
 
 tilemap_id = layer_tilemap_get_id(layer_get_id("lyr_terrain"));
 

@@ -5,7 +5,7 @@ if (!surface_exists(surf)) {
 
 if (surface_exists(surf)) {
 	shader_set(sdr_fow);
-	draw_surface(surf, 0, 0);
+	//draw_surface(surf, 0, 0);
 	shader_reset();
 	
 	surface_set_target(surf);

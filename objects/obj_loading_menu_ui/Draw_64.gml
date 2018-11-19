@@ -10,7 +10,7 @@ if (loading_progress >= 1) {
 	room_goto_next();
 }
 
-draw_set_font(fnt_menu);
+draw_set_font(fnt_subtitle);
 
 draw_text(width / 2, height / 2, "Loading" + string_repeat(".", dots));
 

@@ -3,8 +3,8 @@
         "command_center": {
             "id": "command_center",
             "names": [
-                "Castle",
                 "Command Center",
+                "Castle",
                 "Nexus"
             ],
             "descriptions": [
@@ -18,13 +18,13 @@
         "solar_collector": {
             "id": "solar_collector",
             "names": [
-                "Farm",
                 "Solar Collector",
+                "Farm",
                 "Radiator"
             ],
             "descriptions": [
-                "This farm collects energy based on\nthe time of year.",
                 "This solar panel collects energy based\non the time of day.",
+                "This farm collects energy based on\nthe time of year.",
                 "This radiator collects energy based on\nthe time of day."
             ],
             "cost": 1000,
@@ -33,13 +33,13 @@
         "turret": {
             "id": "turret",
             "names": [
-                "Archer Tower",
                 "Laser Turret",
+                "Archer Tower",
                 "Photon Cannon"
             ],
             "descriptions": [
-                "This tower fires arrows at incoming\nenemies. It draws energy as arrows\nare fired.",
                 "This turret fires lasers at incoming\nenemies. It draws energy as lasers\nare fired.",
+                "This tower fires arrows at incoming\nenemies. It draws energy as arrows\nare fired.",
                 "This cannon fires plasma balls at incoming\nenemies. It draws energy as plasma\nis fired."
             ],
             "cost": 3000,
@@ -48,8 +48,8 @@
         "battery": {
             "id": "battery",
             "names": [
-                "Silo",
                 "Battery",
+                "Silo",
                 "Energy Reservoir"
             ],
             "descriptions": [

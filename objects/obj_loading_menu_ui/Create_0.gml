@@ -10,14 +10,22 @@ width = window_get_width();
 height = window_get_height();
 
 enum Theme {
-	MEDIVAL = 0,
-	FUTURISTIC = 1,
-	ALIEN = 2
+	NORMAL = 0,
+	MEDIVAL = 1,
+	FUTURISTIC = 2
+}
+
+enum World {
+	NORMAL = 0,
+	DRY = 1,
+	WET = 2
 }
 
 globalvar tower_info;
 globalvar game_theme;
-game_theme = Theme.MEDIVAL;
+globalvar game_world;
+game_theme = Theme.NORMAL;
+game_world = World.NORMAL;
 
 var theJsonFile = file_text_open_read("towers.json");
 var theData = "";
