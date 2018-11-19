@@ -1,4 +1,4 @@
-mark_as_node("Solar Collector", "This solar panel collects energy based\non the time of day.", spr_type_unknown, 1000);
+mark_as_node("solar_collector", spr_type_unknown, 1000);
 
 mark_as_input_node();
 mark_as_transfer_node();

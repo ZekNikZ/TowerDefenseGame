@@ -7,18 +7,20 @@ unlocked_towers_objs = ds_list_create();
 unlocked_towers_icons = ds_list_create();
 unlocked_towers_costs = ds_list_create();
 
-ds_list_add(unlocked_towers_objs, obj_tower_battery);
-ds_list_add(unlocked_towers_icons, spr_tower_battery);
-ds_list_add(unlocked_towers_costs, 2000);
+var current_key = ds_map_find_first(tower_info);
+var size = ds_map_size(tower_info);
 
-ds_list_add(unlocked_towers_objs, obj_tower_solar_collector);
-ds_list_add(unlocked_towers_icons, spr_tower_solar_collector);
-ds_list_add(unlocked_towers_costs, 1000);
+for (var i = 0; i < size; i++) {
+	var cost = ds_map_find_value(ds_map_find_value(tower_info, current_key), "cost");
 
-ds_list_add(unlocked_towers_objs, obj_tower_turret);
-ds_list_add(unlocked_towers_icons, spr_tower_turret);
-ds_list_add(unlocked_towers_costs, 3000);
-
+	if (cost > 0) {
+		ds_list_add(unlocked_towers_objs, asset_get_index("obj_tower_" + current_key));
+		ds_list_add(unlocked_towers_icons, asset_get_index("spr_tower_" + current_key));
+		ds_list_add(unlocked_towers_costs, cost);
+	}
+	
+    current_key = ds_map_find_next(tower_info, current_key);
+}
 
 bottom_height = 0.2;
 side_width = 0.12;

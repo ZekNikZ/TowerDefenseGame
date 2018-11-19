@@ -1,4 +1,4 @@
-mark_as_node("Command Centre", "This structure is the central regulator\nfor the energy network. As such, make\nsure it is not destroyed.", spr_type_command_centre, -1);
+mark_as_node("command_center", spr_type_command_centre, -1);
 
 mark_as_parent_node();
 

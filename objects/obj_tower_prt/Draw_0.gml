@@ -1,4 +1,6 @@
+//shader_set(sdr_color_choose);
 draw_self();
+//shader_reset();
 
 /*
 

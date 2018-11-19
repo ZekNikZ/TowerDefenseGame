@@ -1,0 +1,49 @@
+{
+    "towers": [
+        {
+            "id": "command_center",
+            "names": [
+                "Castle",
+                "Command Center",
+                "Nexus"
+            ],
+            "descriptions": [
+                "This structure is the central regulator\nfor the energy network. As such, make\nsure it is not destroyed.",
+                "This structure is the central regulator\nfor the energy network. As such, make\nsure it is not destroyed.",
+                "This structure is the central regulator\nfor the energy network. As such, make\nsure it is not destroyed."
+            ],
+            "cost": -1,
+            "health": 200
+        },
+        {
+            "id": "solar_collector",
+            "names": [
+                "Farm",
+                "Solar Collector",
+                "Radiator"
+            ],
+            "descriptions": [
+                "This farm collects energy based on\nthe time of year.",
+                "This solar panel collects energy based\non the time of day.",
+                "This radiator collects energy based on\nthe time of day."
+            ],
+            "cost": 1000,
+            "health": 60
+        },
+        {
+            "id": "turret",
+            "names": [
+                "Archer Tower",
+                "Laser Turret",
+                "Photon Cannon"
+            ],
+            "descriptions": [
+                "This tower fires arrows at incoming\nenemies. It draws energy as arrows\nare fired.",
+                "This turret fires lasers at incoming\nenemies. It draws energy as lasers\nare fired.",
+                "This cannon fires plasma balls at incoming\nenemies. It draws energy as plasma\nis fired."
+            ],
+            "cost": 3000,
+            "health": 80
+        }
+    ]
+}
