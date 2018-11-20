@@ -5,5 +5,5 @@
 event_inherited();
 
 if(instance_exists(target_enemy)) {
-	image_angle = point_direction(x,y,target_enemy.x,target_enemy.y);
+	//image_angle = point_direction(x,y,target_enemy.x,target_enemy.y);
 }
