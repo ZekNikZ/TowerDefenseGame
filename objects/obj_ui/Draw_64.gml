@@ -105,7 +105,8 @@ for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
 	// Tower button checking
 	if (click) {
 		if (zy <= window_mouse_get_y() && window_mouse_get_y() <= zy + oy * 2 + 30) {
-			obj_cursor.tower_type = i + 2;
+			obj_cursor.tower_type = unlocked_towers_objs[| i];
+			obj_cursor.tower_icon = unlocked_towers_icons[| i];
 			obj_cursor.mode = CursorMode.PLACE;
 			obj_cursor.tower_cost = unlocked_towers_costs[|i ];
 			show_debug_message(obj_cursor.tower_cost);

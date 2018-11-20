@@ -4,10 +4,10 @@
     "mvc": "1.1",
     "name": "07f8d5f6-4038-4d2f-9bfd-d85c039bf88e",
     "children": [
-        "f47dbbd5-820d-4a82-9a2d-3fa98c1fe622",
-        "2f84667a-78ad-4729-bd5f-38a593bcd428",
-        "d6c78272-4e95-4521-a43a-a65958c46841",
-        "d67237a1-35e0-4aed-9905-80d335237705"
+        "dcb72e80-b968-437b-b683-db9322b839c2",
+        "44be26c7-3071-4bb8-9dc9-4d9e0d8f53c6",
+        "fa28d457-d489-4d60-aa7b-068eda6b8ce9",
+        "f3e53b44-a8be-4a10-a163-a6ba2a96fc9b"
     ],
     "filterType": "GMSprite",
     "folderName": "towers",

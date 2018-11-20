@@ -1,19 +1,10 @@
 with(obj_cursor) {
-	for(var proximity_check_type = 1; proximity_check_type <= 4; proximity_check_type++) {
-		switch(proximity_check_type) {
-			case 1: 
-				nearest_tower = instance_nearest(x,y,obj_tower_command_center);
-				break;
-			case 2: 
-				nearest_tower = instance_nearest(x,y,obj_tower_battery);
-				break;
-			case 3:
-				nearest_tower = instance_nearest(x,y,obj_tower_solar_collector);
-				break;
-			case 4:
-				nearest_tower = instance_nearest(x,y,obj_tower_turret);
-				break;
-		}
+	var size = ds_map_size(tower_info);
+	current_key = ds_map_find_first(tower_info);
+	
+	for(var proximity_check_type = 0; proximity_check_type < size; ++proximity_check_type) {
+		show_debug_message("obj_tower_" + current_key);
+		nearest_tower = instance_nearest(x, y, asset_get_index("obj_tower_" + current_key));
 		
 		var tilemap_id = layer_tilemap_get_id("lyr_terrain");
 		
@@ -29,7 +20,7 @@ with(obj_cursor) {
 			can_place = false;
 		}
 		
-		
+		current_key = ds_map_find_next(tower_info, current_key);
 	}
 }
 

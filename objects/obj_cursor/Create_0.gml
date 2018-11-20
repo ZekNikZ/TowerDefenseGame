@@ -1,10 +1,7 @@
-/// @description Insert description here
-// You can write your code in this editor
-
 can_place = false;
 click = 0;
 nearest_tower = 0;
-proximity_check_type = 1;
+proximity_check_type = 0;
 
 enum CursorMode {
 	NONE,
@@ -13,3 +10,6 @@ enum CursorMode {
 }
 
 mode = CursorMode.SELECT;
+
+tower_type = obj_tower_command_center;
+tower_icon = spr_tower_command_center_debug;

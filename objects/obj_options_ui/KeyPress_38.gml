@@ -1,1 +1,1 @@
-selected_index = (selected_index - 1) % indices;
+selected_index = (selected_index + indices - 1) % indices;

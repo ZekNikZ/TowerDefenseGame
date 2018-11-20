@@ -571,6 +571,25 @@
             }
         },
         {
+            "Key": "2c9c2cfd-3558-4743-88b4-8a57850d7567",
+            "Value": {
+                "id": "04e82651-80a3-416f-9ad7-30ecfe699a9c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_solar_collector_2\/spr_tower_solar_collector_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2cdf9735-dfac-4c0d-b72d-3a61b7c547b4",
             "Value": {
                 "id": "a317d615-f82f-45a3-87ae-07a1c87ad942",
@@ -642,7 +661,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_tower_battery\/spr_tower_battery.yy",
+                "resourcePath": "sprites\/spr_tower_battery_debug\/spr_tower_battery_debug.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -663,6 +682,25 @@
                 ],
                 "resourcePath": "objects\/obj_cursor\/obj_cursor.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "347bba80-2482-43f0-aec8-05dd591e936b",
+            "Value": {
+                "id": "a193350b-a992-4dfb-a578-baf4a122ecd4",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_turret_2\/spr_tower_turret_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -856,6 +894,25 @@
             }
         },
         {
+            "Key": "44be26c7-3071-4bb8-9dc9-4d9e0d8f53c6",
+            "Value": {
+                "id": "61f385a2-846d-4b36-bb2a-75a7817d1c45",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/44be26c7-3071-4bb8-9dc9-4d9e0d8f53c6.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "47fbc917-b08c-42fb-b263-f3ed4e13301f",
             "Value": {
                 "id": "fb15a15f-fad2-423f-ad20-9c686afe6964",
@@ -910,6 +967,25 @@
                 ],
                 "resourcePath": "objects\/obj_loading_menu_ui\/obj_loading_menu_ui.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "51217702-5b20-41a4-9ad9-413d3e237410",
+            "Value": {
+                "id": "49c327aa-8395-43c1-bfa5-677aac6ac03b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_solar_collector_1\/spr_tower_solar_collector_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1141,6 +1217,44 @@
             }
         },
         {
+            "Key": "7509b8f6-86d4-445d-82fe-add89dccf1be",
+            "Value": {
+                "id": "d22e3b3e-fe74-4715-bec7-2b0be0dd1988",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_battery_1\/spr_tower_battery_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "7547848d-5a6c-431f-a698-ffbd7314ee8d",
+            "Value": {
+                "id": "3e76d937-7e68-4163-8dbc-a6dc69bc6c0c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_battery_2\/spr_tower_battery_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "79bea03a-0fd3-454d-9004-5c673f2b38e3",
             "Value": {
                 "id": "3d730aa9-8de6-4af3-83ce-6dadd9b684c3",
@@ -1157,6 +1271,25 @@
                 ],
                 "resourcePath": "objects\/obj_tower_turret\/obj_tower_turret.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7a05deb4-128e-47dd-b8c5-a997f0d8f2d3",
+            "Value": {
+                "id": "b00983d7-4874-4991-811b-f74c8348af3c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_command_center_2\/spr_tower_command_center_2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1195,6 +1328,25 @@
                 ],
                 "resourcePath": "objects\/obj_enemy_prt\/obj_enemy_prt.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "83b015d8-f268-4f6e-b145-755e28bb0c5f",
+            "Value": {
+                "id": "de1b546a-a556-419f-8e03-86fc2a647615",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_battery_0\/spr_tower_battery_0.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1255,6 +1407,25 @@
             }
         },
         {
+            "Key": "86819c78-0128-40d4-88b5-28318fa727ec",
+            "Value": {
+                "id": "97cb4982-be04-442e-a9c6-7c2b382bd85e",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_turret_1\/spr_tower_turret_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "87d985c6-0500-4685-a296-7d34e0a8873a",
             "Value": {
                 "id": "e2c2f40b-bcfb-436d-b563-61838e4438e4",
@@ -1308,6 +1479,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/spr_debug_node_icon_transfer\/spr_debug_node_icon_transfer.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8ad5bfbc-063c-428c-9520-01d72042390a",
+            "Value": {
+                "id": "2e23c129-f64e-4ac0-991e-ac58b03c261c",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_command_center_0\/spr_tower_command_center_0.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1480,6 +1670,25 @@
                 ],
                 "resourcePath": "scripts\/scrGenerateOctaveNoise\/scrGenerateOctaveNoise.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9c41c972-9ad6-4c1c-87a7-a04fdaf4090d",
+            "Value": {
+                "id": "00d27750-edcb-4c92-a114-14ef06d8eb23",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_solar_collector_0\/spr_tower_solar_collector_0.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1749,6 +1958,25 @@
             }
         },
         {
+            "Key": "bff17ec2-4581-4540-b8f7-233853512d3a",
+            "Value": {
+                "id": "f0b348e8-0f50-4750-92bf-c303dab69cc3",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_turret_0\/spr_tower_turret_0.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c03ebbbc-d298-4d7b-bc1a-cc3b7833fd4f",
             "Value": {
                 "id": "7c4874b8-78ef-49da-bac9-e167a839954d",
@@ -1915,7 +2143,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_tower_turret\/spr_tower_turret.yy",
+                "resourcePath": "sprites\/spr_tower_turret_debug\/spr_tower_turret_debug.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1934,7 +2162,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_tower_solar_collector\/spr_tower_solar_collector.yy",
+                "resourcePath": "sprites\/spr_tower_solar_collector_debug\/spr_tower_solar_collector_debug.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1996,6 +2224,25 @@
             }
         },
         {
+            "Key": "dcb72e80-b968-437b-b683-db9322b839c2",
+            "Value": {
+                "id": "81ae7011-5ca5-458a-8a1b-3249a5585179",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/dcb72e80-b968-437b-b683-db9322b839c2.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "df7d3ea0-617f-48c7-8eb5-872f94a080ca",
             "Value": {
                 "id": "02cddac3-c95a-4d69-9606-d0223380b13e",
@@ -2012,6 +2259,25 @@
                 ],
                 "resourcePath": "views\/df7d3ea0-617f-48c7-8eb5-872f94a080ca.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e0eb4b0d-9409-4306-a678-6c55ae54f7fb",
+            "Value": {
+                "id": "ea9c4b7a-c65c-4a80-bac8-48aa740029cb",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_tower_command_center_1\/spr_tower_command_center_1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2053,6 +2319,25 @@
             }
         },
         {
+            "Key": "f3e53b44-a8be-4a10-a163-a6ba2a96fc9b",
+            "Value": {
+                "id": "06e5cf23-7586-4d4e-992f-bc3439962029",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/f3e53b44-a8be-4a10-a163-a6ba2a96fc9b.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "fc318ce0-ce2c-4634-8ce7-8a6be2e2967f",
@@ -2086,7 +2371,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_tower_command_centre\/spr_tower_command_centre.yy",
+                "resourcePath": "sprites\/spr_tower_command_center_debug\/spr_tower_command_center_debug.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2145,6 +2430,25 @@
                 ],
                 "resourcePath": "objects\/obj_turret_prt\/obj_turret_prt.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "fa28d457-d489-4d60-aa7b-068eda6b8ce9",
+            "Value": {
+                "id": "c6c9c996-1877-4b4f-8629-5a3c306d02df",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "views\/fa28d457-d489-4d60-aa7b-068eda6b8ce9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {

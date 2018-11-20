@@ -15,7 +15,7 @@ for (var i = 0; i < size; i++) {
 
 	if (cost > 0) {
 		ds_list_add(unlocked_towers_objs, asset_get_index("obj_tower_" + current_key));
-		ds_list_add(unlocked_towers_icons, asset_get_index("spr_tower_" + current_key));
+		ds_list_add(unlocked_towers_icons, asset_get_index("spr_tower_" + current_key + "_" + string(game_theme)));
 		ds_list_add(unlocked_towers_costs, cost);
 	}
 	
