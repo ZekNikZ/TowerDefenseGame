@@ -14,10 +14,10 @@
             "enemies": [
                 {
                     "type": "crawler",
-                    "count": 24
+                    "count": 20
                 }
             ],
-            "spawn_time": 15,
+            "spawn_time": 20,
             "wave_time": 45
         }
     ]

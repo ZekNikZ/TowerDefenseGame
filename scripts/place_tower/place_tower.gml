@@ -9,6 +9,9 @@ with(obj_cursor){
 			obj_tower_command_center.tower_cost_deduction += tower_cost;
 			show_debug_message("Cost some more stuff");
 		}
+	} else if (click) {
+		mode = CursorMode.SELECT;
+		sprite_index = noone;
 	}
 	
 }

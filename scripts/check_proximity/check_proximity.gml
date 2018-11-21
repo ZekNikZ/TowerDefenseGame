@@ -15,6 +15,10 @@ with(obj_cursor) {
 			can_place = true;
 			place_tower();
 			break;
+		} else if (click) {
+			mode = CursorMode.SELECT;
+			sprite_index = noone;
+			can_place = false;
 		} else {
 			sprite_index = spr_no_power;
 			can_place = false;

@@ -43,6 +43,13 @@ if (is_storage_node) {
 
 */
 
+if (is_health_node && hp < hp_max) {
+	//draw_set_color(lerp3_color(c_red, c_orange, c_green, hp / hp_max));
+	draw_set_color(merge_color(c_red, c_green, hp / hp_max));
+	
+	draw_rectangle(x - sprite_width / 2 * hp / hp_max, y + sprite_height / 2 + 2, x + sprite_width / 2 * hp / hp_max, y + sprite_height / 2 + 4, false);
+}
+
 surface_set_target(obj_fow.surf);
 gpu_set_blendmode(bm_max);
 draw_circle_color(x, y, place_range + 100, c_white, c_black, false);
