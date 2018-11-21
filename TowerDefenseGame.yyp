@@ -533,6 +533,25 @@
             }
         },
         {
+            "Key": "2789fd90-6925-4619-98ed-38714d65518d",
+            "Value": {
+                "id": "0994fa67-1232-4ab6-b1dd-0bed26c0d004",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "objects\/obj_pause_controller\/obj_pause_controller.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "29ffd66b-bf91-4f64-9312-333141c499a2",
             "Value": {
                 "id": "c462e527-2d08-4fc7-bc74-46cd2c355717",
