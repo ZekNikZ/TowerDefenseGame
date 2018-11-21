@@ -4,7 +4,7 @@ switch (wave_state) {
 		spawn_index = 0;
 		spawn_count = 0;
 		spawn_complete = false;
-		alarm_set(SPAWN_ALARM, ds_map_find_value(wave_info[| wave_num], "spawn_time") * 60);
+		alarm_set(SPAWN_ALARM, ds_map_find_value(wave_info[| wave_num], "spawn_time") * 2);
 		break;
 	case WAVE_STATE.SETUP:
 		wave_state = WAVE_STATE.ATTACK;

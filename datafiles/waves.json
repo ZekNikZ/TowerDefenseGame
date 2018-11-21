@@ -4,21 +4,21 @@
             "enemies": [
                 {
                     "type": "crawler",
-                    "count": 20
+                    "count": 12
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 60
+            "wave_time": 30
         },
         {
             "enemies": [
                 {
                     "type": "crawler",
-                    "count": 35
+                    "count": 24
                 }
             ],
-            "spawn_time": 5,
-            "wave_time": 90
+            "spawn_time": 15,
+            "wave_time": 45
         }
     ]
 }

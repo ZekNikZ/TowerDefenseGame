@@ -10,7 +10,7 @@ WAVE_STATES = 3;
 
 wave_num = 0;
 wave_state = WAVE_STATE.BETWEEN;
-between_wave_time = 15 * 60;
+between_wave_time = 2 * 60;
 
 SPAWN_ALARM = 1;
 WAVE_ALARM = 0;
@@ -27,7 +27,7 @@ file_text_close(theJsonFile);
 var wave_data = json_decode(theData);
 wave_info = wave_data[? "waves"];
 
-alarm_set(WAVE_ALARM, between_wave_time);
+alarm_set(WAVE_ALARM, between_wave_time * 10);
 
 spawn_index = 0;
 spawn_count = 0;

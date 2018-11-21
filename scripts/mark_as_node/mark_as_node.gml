@@ -13,4 +13,6 @@ if (argument_count == 3) {
 	tower_cost = argument[2];
 	
 	sprite_index = asset_get_index("spr_tower_" + argument[0] + "_" + string(game_theme));
+	
+	mark_as_health_node(ds_map_find_value(tower_info[? argument[0]], "health"));
 }
