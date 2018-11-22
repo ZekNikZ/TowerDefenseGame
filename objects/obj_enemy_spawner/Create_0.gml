@@ -8,7 +8,7 @@ enum WAVE_STATE {
 globalvar WAVE_STATES;
 WAVE_STATES = 3;
 
-wave_num = 0;
+wave_num = -1;
 wave_state = WAVE_STATE.BETWEEN;
 between_wave_time = 2 * 60;
 
@@ -34,3 +34,15 @@ spawn_count = 0;
 spawn_complete = true;
 spawn_radius_add = 500;
 spawn_cooldown = 0;
+
+messages = ds_list_create();
+message_num = 0;
+wave_messages = 0;
+
+event_user(1);
+wave_num = 0;
+event_user(1);
+
+alarm_paused = false;
+alarm_0_val = -1;
+alarm_1_val = -1;

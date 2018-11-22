@@ -1,4 +1,4 @@
-if (game_paused) {
+if (game_paused && pause_type == PauseType.NORMAL) {
 	var width = window_get_width();
 	var height = window_get_height();
 	
@@ -21,4 +21,6 @@ if (game_paused) {
 	
 	draw_rectangle(width / 2 + 15 - 10, height / 2 - 24, width / 2 + 15 + 10, height / 2 + 24, false);
 	draw_rectangle(width / 2 - 15 - 10, height / 2 - 24, width / 2 - 15 + 10, height / 2 + 24, false);
+} else if (game_paused && pause_type == PauseType.MESSAGE) {
+	
 }

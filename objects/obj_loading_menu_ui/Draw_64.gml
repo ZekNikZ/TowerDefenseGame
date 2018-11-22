@@ -5,7 +5,7 @@ if (dot_counter >= dot_counter_max) {
 	dot_counter = 0;
 }
 
-loading_progress = loading_progress + 0.01;
+loading_progress = loading_progress + 0.02;
 if (loading_progress >= 1) {
 	room_goto_next();
 }

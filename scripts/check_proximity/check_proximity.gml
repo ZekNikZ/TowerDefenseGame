@@ -3,7 +3,7 @@ with(obj_cursor) {
 	current_key = ds_map_find_first(tower_info);
 	
 	for(var proximity_check_type = 0; proximity_check_type < size; ++proximity_check_type) {
-		show_debug_message("obj_tower_" + current_key);
+		//show_debug_message("obj_tower_" + current_key);
 		nearest_tower = instance_nearest(x, y, asset_get_index("obj_tower_" + current_key));
 		
 		var tilemap_id = layer_tilemap_get_id("lyr_terrain");

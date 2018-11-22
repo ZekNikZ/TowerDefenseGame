@@ -1,7 +1,7 @@
 window_center();
 
 dot_counter = 0;
-dot_counter_max = 50;
+dot_counter_max = 30;
 dots = 1;
 
 loading_progress = 0;

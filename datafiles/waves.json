@@ -8,7 +8,18 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 30
+            "wave_time": 30,
+            "stories": [
+                "Commander, you arrived just in time. We need your help! There are extraterrestrial robots which threaten our safety. Build up our defenses so that we may survive! Hurry!",
+                "Sir, you arrived just in time. We need your help! There are extraterrestrial mechanical beings which threaten our safety. Build up our defenses so that we may survive! Hurry!",
+                "Captain, you arrived just in time. We need your help! There are extraterrestrial androids which threaten our safety. Build up our defenses so that we may survive! Hurry!",
+                "Use the menu on the right of the screen to select a structure to build. Afterwards, assuming that you have enough energy, you may build the structure wherever you like.",
+                "Use the menu on the right of the screen to select a structure to build. Afterwards, assuming that you have enough energy, you may build the structure wherever you like.",
+                "Use the menu on the right of the screen to select a structure to build. Afterwards, assuming that you have enough energy, you may build the structure wherever you like.",
+                "Good luck, Commander, we are counting on you...",
+                "Good luck, Sir, we are counting on you...",
+                "Good luck, Captain, we are counting on you..."
+            ]
         },
         {
             "enemies": [
@@ -18,7 +29,12 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 45
+            "wave_time": 45,
+            "stories": [
+                "That was just the first wave of them. Our sensors detect even more of them coming...",
+                "That was just the first wave of them. Our scouts detect even more of them coming...",
+                "That was just the first wave of them. Our sensors detect even more of them coming..."
+            ]
         }
     ]
 }

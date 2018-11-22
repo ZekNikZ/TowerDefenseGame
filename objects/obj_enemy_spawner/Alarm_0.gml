@@ -14,5 +14,6 @@ switch (wave_state) {
 		wave_state = WAVE_STATE.BETWEEN;
 		++wave_num;
 		alarm_set(WAVE_ALARM, between_wave_time);
+		event_user(1);
 		break;
 }
