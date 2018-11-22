@@ -76,11 +76,13 @@ draw_set_alpha(1);
 draw_set_font(fnt_ui_tower_attr);
 	
 // Network information
-draw_sprite_ext(spr_debug_node_icon_energy, -1, width - side_width * width + 3, 10, 1.5, 1.5, 0, c_white, 1);
-draw_text(width - side_width * width + 33, 10, obj_tower_command_center.system_total_storage);
+if (instance_exists(obj_tower_command_center)) {
+	draw_sprite_ext(spr_debug_node_icon_energy, -1, width - side_width * width + 3, 10, 1.5, 1.5, 0, c_white, 1);
+	draw_text(width - side_width * width + 33, 10, obj_tower_command_center.system_total_storage);
 
-draw_sprite_ext(spr_debug_node_icon_health, -1, width - side_width * width + 3, 40, 3, 3, 0, c_white, 1);
-draw_text(width - side_width * width + 33, 40, string(obj_tower_command_center.hp));
+	draw_sprite_ext(spr_debug_node_icon_health, -1, width - side_width * width + 3, 40, 3, 3, 0, c_white, 1);
+	draw_text(width - side_width * width + 33, 40, string(obj_tower_command_center.hp));
+}
 
 // Tower buttons
 var click = mouse_check_button_pressed(mb_left) && window_mouse_get_x() > width - side_width * width;

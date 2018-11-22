@@ -27,8 +27,8 @@
                 "This farm collects energy based on\nthe time of year.",
                 "This radiator collects energy based on\nthe time of day."
             ],
-            "cost": 1000,
-            "health": 60
+            "cost": 1500,
+            "health": 15
         },
         "turret": {
             "id": "turret",
@@ -43,7 +43,7 @@
                 "This cannon fires plasma balls at incoming\nenemies. It draws energy as plasma\nis fired."
             ],
             "cost": 3000,
-            "health": 80
+            "health": 30
         },
         "battery": {
             "id": "battery",
@@ -57,8 +57,8 @@
                 "This is the most basic form of mass\nenergy storage. This acts as a reserve\nenergy storage location.",
                 "This is the most basic form of mass\nenergy storage. This acts as a reserve\nenergy storage location."
             ],
-            "cost": 2000,
-            "health": 70
+            "cost": 2500,
+            "health": 25
         }
     }
 }

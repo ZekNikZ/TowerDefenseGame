@@ -25,7 +25,11 @@ tilemap_id = layer_tilemap_get_id(layer_get_id("lyr_terrain"));
 
 for (var xx = 0; xx < width * scale; ++xx) {
     for (var yy = 0; yy < height * scale; ++yy) {
-		tilemap_set(tilemap_id, scrGetColor(ds_grid_get(octvalgrid, xx, yy)), xx, yy);
+		var v = scrGetColor(ds_grid_get(octvalgrid, xx, yy));
+		tilemap_set(tilemap_id, v, xx, yy);
+		if (v == 4) {
+			instance_create_layer(xx * 32, yy * 32, "lyr_wall", obj_wall);
+		}
     }
 }
 

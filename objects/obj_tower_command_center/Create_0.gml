@@ -5,7 +5,7 @@ mark_as_parent_node();
 mark_as_input_node();
 mark_as_output_node(-1, 999);
 mark_as_transfer_node();
-mark_as_storage_node(20, 50, -1, 1500);
+mark_as_storage_node(20, 50, -1, 2000);
 
 system_center_x = x;
 system_center_y = y;
