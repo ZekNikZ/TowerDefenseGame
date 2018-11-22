@@ -3,13 +3,15 @@ height = window_get_height();
 
 // Bottom rectangle
 draw_set_color(c_black);
-draw_set_alpha(0.5);
+draw_set_alpha(0.7);
 draw_rectangle(game_controls_width * width, height - bottom_height * height, width, height, false);
 
 // Side rectangle
+draw_set_alpha(0.6);
 draw_rectangle(width - side_width * width, 0, width, height - bottom_height * height - 1, false);
 
 // Game Controls
+draw_set_alpha(0.6);
 draw_rectangle(0, height - bottom_height * height, game_controls_width * width - 1, height, false);
 
 // Selected Tower Info
@@ -119,6 +121,18 @@ for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
 	
 	tower_button_offset += oy * 2 + 35;
 }
+
+// Stats
+draw_set_halign(fa_center);
+draw_set_valign(fa_center);
+
+draw_set_font(fnt_ui_tower_attr);
+draw_set_color(c_white);
+
+draw_text(game_controls_width * width / 2, height - bottom_height * height + 30, "Wave " + string(obj_enemy_spawner.wave_num));
+
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 // Minimap
 draw_set_color(c_black);
