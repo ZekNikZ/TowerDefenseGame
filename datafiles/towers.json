@@ -8,9 +8,9 @@
                 "Nexus"
             ],
             "descriptions": [
-                "This structure is the central regulator\nfor the energy network. As such, make\nsure it is not destroyed.",
-                "This structure is the central regulator\nfor the energy network. As such, make\nsure it is not destroyed.",
-                "This structure is the central regulator\nfor the energy network. As such, make\nsure it is not destroyed."
+                "This structure is the central regulator for the energy network. As such, make sure it is not destroyed.",
+                "This structure is the central regulator for the energy network. As such, make sure it is not destroyed.",
+                "This structure is the central regulator for the energy network. As such, make sure it is not destroyed."
             ],
             "cost": -1,
             "health": 200
@@ -23,9 +23,9 @@
                 "Radiator"
             ],
             "descriptions": [
-                "This solar panel collects energy based\non the time of day.",
-                "This farm collects energy based on\nthe time of year.",
-                "This radiator collects energy based on\nthe time of day."
+                "This solar panel collects energy based on the time of day.",
+                "This farm collects energy based on the time of year.",
+                "This radiator collects energy based on the time of day."
             ],
             "cost": 1500,
             "health": 15
@@ -38,9 +38,9 @@
                 "Photon Cannon"
             ],
             "descriptions": [
-                "This turret fires lasers at incoming\nenemies. It draws energy as lasers\nare fired.",
-                "This tower fires arrows at incoming\nenemies. It draws energy as arrows\nare fired.",
-                "This cannon fires plasma balls at incoming\nenemies. It draws energy as plasma\nis fired."
+                "This turret fires lasers at incoming enemies. It draws energy as lasers are fired.",
+                "This tower fires arrows at incoming enemies. It draws energy as arrows are fired.",
+                "This cannon fires plasma balls at incoming enemies. It draws energy as plasma is fired."
             ],
             "cost": 3000,
             "health": 30
@@ -53,9 +53,9 @@
                 "Energy Reservoir"
             ],
             "descriptions": [
-                "This is the most basic form of mass\nenergy storage. This acts as a reserve\nenergy storage location.",
-                "This is the most basic form of mass\nenergy storage. This acts as a reserve\nenergy storage location.",
-                "This is the most basic form of mass\nenergy storage. This acts as a reserve\nenergy storage location."
+                "This is the most basic form of mass energy storage. This acts as a reserve energy storage location.",
+                "This is the most basic form of mass energy storage. This acts as a reserve energy storage location.",
+                "This is the most basic form of mass energy storage. This acts as a reserve energy storage location."
             ],
             "cost": 2500,
             "health": 25

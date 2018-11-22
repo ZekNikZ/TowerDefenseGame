@@ -38,7 +38,7 @@ if (selected_tower != -1) {
 	draw_text(tx, zy, selected_tower.tower_name); 
 	
 	draw_set_font(fnt_ui_tower_desc);
-	draw_text(tx, zy + 26, selected_tower.tower_desc); 
+	draw_text_ext(tx, zy + 26, selected_tower.tower_desc, 15, 280); 
 	
 	draw_set_font(fnt_ui_tower_attr);
 	
