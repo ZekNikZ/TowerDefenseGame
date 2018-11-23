@@ -2,7 +2,7 @@ if (!game_paused) {
 	//step_generated_energy = 30;
 
 	if (hp <= 0) {
-		game_restart();
+		room_goto(rm_lose);
 	}
 
 	if (tower_cost_deduction > 0) {
