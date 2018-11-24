@@ -6,6 +6,7 @@ if (is_output_node && step_ot_activated) {
 			inst.target_y = y;
 			hp -= 25;
 		}
+		attack_counter = attack_cooldown;
 	} else {
 		st_current_storage += 500;
 	}

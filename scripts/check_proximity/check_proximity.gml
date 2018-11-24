@@ -2,6 +2,8 @@ with(obj_cursor) {
 	var size = ds_map_size(tower_info);
 	current_key = ds_map_find_first(tower_info);
 	
+	var in_range = false;
+	
 	for(var proximity_check_type = 0; proximity_check_type < size; ++proximity_check_type) {
 		//show_debug_message("obj_tower_" + current_key);
 		nearest_tower = instance_nearest(x, y, asset_get_index("obj_tower_" + current_key));
@@ -20,7 +22,11 @@ with(obj_cursor) {
 			sprite_index = noone;
 			can_place = false;
 		} else {
-			sprite_index = spr_no_power;
+			if (!in_range && instance_exists(nearest_tower) && point_distance(x,y,nearest_tower.x,nearest_tower.y) < nearest_tower.place_range) {
+				in_range = true;
+			}
+			if (in_range) sprite_index = spr_no_power;
+			else sprite_index = spr_too_close;
 			can_place = false;
 		}
 		

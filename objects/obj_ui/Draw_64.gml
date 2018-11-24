@@ -100,7 +100,7 @@ for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
 	
 	draw_sprite_ext(spr_debug_node_icon_energy, -1, zx + tower_button_sprite_padding * width, zy + oy * 2 + 5, 1.5, 1.5, 0, c_white, 1);
 	
-	if (unlocked_towers_costs[| i] <= obj_tower_command_center.system_total_storage) {
+	if (instance_exists(obj_tower_command_center) && unlocked_towers_costs[| i] <= obj_tower_command_center.system_total_storage) {
 		draw_set_color(c_white);
 	} else {
 		draw_set_color(c_red);

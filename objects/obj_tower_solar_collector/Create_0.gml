@@ -5,6 +5,6 @@ mark_as_transfer_node();
 
 node_setup(obj_tower_command_center);
 
-counter = 0;
+global.solar_counter = 0;
 
 debug_energy_gen = 10;

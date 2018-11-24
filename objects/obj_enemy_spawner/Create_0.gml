@@ -27,7 +27,7 @@ file_text_close(theJsonFile);
 var wave_data = json_decode(theData);
 wave_info = wave_data[? "waves"];
 
-alarm_set(WAVE_ALARM, between_wave_time * 10);
+alarm_set(WAVE_ALARM, between_wave_time * 13);
 
 spawn_index = 0;
 spawn_count = 0;

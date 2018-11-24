@@ -13,7 +13,7 @@
                 "This structure is the central regulator for the energy network. As such, make sure it is not destroyed."
             ],
             "cost": -1,
-            "health": 200
+            "health": 300
         },
         "solar_collector": {
             "id": "solar_collector",
@@ -28,7 +28,7 @@
                 "This radiator collects energy based on the time of day."
             ],
             "cost": 1500,
-            "health": 15
+            "health": 40
         },
         "turret": {
             "id": "turret",
@@ -43,7 +43,7 @@
                 "This cannon fires plasma balls at incoming enemies. It draws energy as plasma is fired."
             ],
             "cost": 3000,
-            "health": 30
+            "health": 60
         },
         "battery": {
             "id": "battery",
@@ -58,7 +58,7 @@
                 "This is the most basic form of mass energy storage. This acts as a reserve energy storage location."
             ],
             "cost": 2500,
-            "health": 25
+            "health": 50
         }
     }
 }

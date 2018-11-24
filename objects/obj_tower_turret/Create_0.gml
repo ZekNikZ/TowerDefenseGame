@@ -8,3 +8,6 @@ node_setup(obj_tower_command_center);
 
 
 target_enemy = noone;
+
+attack_cooldown = 10;
+attack_counter = 0;

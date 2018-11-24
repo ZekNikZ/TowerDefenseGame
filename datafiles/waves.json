@@ -35,6 +35,29 @@
                 "That was just the first wave of them. Our scouts detect even more of them coming...",
                 "That was just the first wave of them. Our sensors detect even more of them coming..."
             ]
+        },
+        {
+            "enemies": [
+                {
+                    "type": "crawler",
+                    "count": 10
+                },
+                {
+                    "type": "crawler2",
+                    "count": 5
+                },
+                {
+                    "type": "arbiter",
+                    "count": 1
+                }
+            ],
+            "spawn_time": 20,
+            "wave_time": 45,
+            "stories": [
+                "Commander, stand guard! A larger threat has been spotted over the horizon!",
+                "Sir, stand guard! A larger threat has been spotted over the horizon!",
+                "Captain, stand guard! A larger threat has been spotted over the horizon!"
+            ]
         }
     ]
 }

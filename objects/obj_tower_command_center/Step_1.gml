@@ -1,4 +1,8 @@
 if (!game_paused) {
+	++global.solar_counter;
+}
+
+if (!game_paused) {
 	//step_generated_energy = 30;
 
 	if (hp <= 0) {
