@@ -10,10 +10,24 @@ with(obj_cursor) {
 		
 		var tilemap_id = layer_tilemap_get_id("lyr_terrain");
 		
-		if (place_meeting(x,y,obj_tower_prt) || tile_get_index(tilemap_get_at_pixel(tilemap_id, x, y)) >= 4) {
+		if (place_meeting(x,y,obj_tower_prt)) {
 			can_place = false;
 			sprite_index = spr_too_close;
 		} else if (tower_cost <= obj_tower_command_center.system_total_storage && instance_exists(nearest_tower) && point_distance(x,y,nearest_tower.x,nearest_tower.y) < nearest_tower.place_range) {
+			if (tile_get_index(tilemap_get_at_pixel(tilemap_id, x, y)) >= 4) {
+				if (tower_type == obj_tower_water_wheel) {
+					can_place = true;
+					place_tower();
+					break;
+				} else {
+					can_place = false;
+					sprite_index = spr_too_close;
+				}
+			} else {
+				can_place = true;
+				place_tower();
+				break;
+			}
 			can_place = true;
 			place_tower();
 			break;

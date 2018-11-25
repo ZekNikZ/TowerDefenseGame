@@ -9,9 +9,13 @@ if (!game_paused) {
 			speed = spd;
 			if (tile_get_index(tilemap_get_at_pixel(obj_room_setup.tilemap_id, x, y)) >= 4) {
 				var dir = point_direction(x, y, target_tower.x, target_tower.y);
-				while (tile_get_index(tilemap_get_at_pixel(obj_room_setup.tilemap_id, x, y)) >= 4) {
-					x += lengthdir_x(spd, dir + 180);
-					y += lengthdir_y(spd, dir + 180);
+				repeat(20) {
+					if (tile_get_index(tilemap_get_at_pixel(obj_room_setup.tilemap_id, x, y)) >= 4) {
+						x += lengthdir_x(spd, dir + 180);
+						y += lengthdir_y(spd, dir + 180);
+					} else {
+						break;
+					}
 				}
 				//move_towards_point(target_tower.x, target_tower.y, -spd * 10);
 			} else {

@@ -4,18 +4,18 @@ height = window_get_height();
 // Bottom rectangle
 draw_set_color(c_black);
 draw_set_alpha(0.7);
-draw_rectangle(game_controls_width * width, height - bottom_height * height, width, height, false);
+draw_rectangle(game_controls_width * width, height - bottom_height * height, width - side_width * width, height, false);
 
 // Side rectangle
 draw_set_alpha(0.6);
-draw_rectangle(width - side_width * width, 0, width, height - bottom_height * height - 1, false);
+draw_rectangle(width - side_width * width, 0, width, height, false);
 
 // Game Controls
 draw_set_alpha(0.6);
 draw_rectangle(0, height - bottom_height * height, game_controls_width * width - 1, height, false);
 
 // Selected Tower Info
-if (selected_tower != -1) {
+if (selected_tower != -1 && instance_exists(selected_tower)) {
 	draw_set_color(c_white);
 	draw_set_alpha(1);
 	
@@ -54,7 +54,8 @@ if (selected_tower != -1) {
 	// Storage
 	if (selected_tower.is_storage_node) {
 		draw_sprite_ext(spr_debug_node_icon_storage, -1, ax, zy + icon_offset, 3, 3, 0, c_white, 1);
-		draw_text(ax + 30, zy + icon_offset, string(selected_tower.st_current_storage) + " / " + string(selected_tower.st_capacity) + " (" + string(selected_tower.st_priority) + ")");
+		//draw_text(ax + 30, zy + icon_offset, string(selected_tower.st_current_storage) + " / " + string(selected_tower.st_capacity) + " (" + string(selected_tower.st_priority) + ")");
+		draw_text(ax + 30, zy + icon_offset, string(selected_tower.st_current_storage) + " / " + string(selected_tower.st_capacity));
 		icon_offset += 30;
 	}
 	
@@ -71,6 +72,8 @@ if (selected_tower != -1) {
 		draw_text(ax + 30, zy + icon_offset, selected_tower.step_used_energy);
 		icon_offset += 30;
 	}
+} else {
+	selected_tower = noone;
 }
 
 draw_set_color(c_white);
@@ -112,7 +115,7 @@ for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
 			obj_cursor.tower_type = unlocked_towers_objs[| i];
 			obj_cursor.tower_icon = unlocked_towers_icons[| i];
 			obj_cursor.mode = CursorMode.PLACE;
-			obj_cursor.tower_cost = unlocked_towers_costs[|i ];
+			obj_cursor.tower_cost = unlocked_towers_costs[| i];
 			//show_debug_message(obj_cursor.tower_cost);
 		}
 	}

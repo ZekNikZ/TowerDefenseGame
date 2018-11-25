@@ -4,11 +4,11 @@
             "enemies": [
                 {
                     "type": "crawler",
-                    "count": 12
+                    "count": 10
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 30,
+            "wave_time": 21,
             "stories": [
                 "Commander, you arrived just in time. We need your help! There are extraterrestrial robots which threaten our safety. Build up our defenses so that we may survive! Hurry!",
                 "Sir, you arrived just in time. We need your help! There are extraterrestrial mechanical beings which threaten our safety. Build up our defenses so that we may survive! Hurry!",
@@ -25,11 +25,15 @@
             "enemies": [
                 {
                     "type": "crawler",
-                    "count": 20
+                    "count": 9
+                },
+                {
+                    "type": "crawler2",
+                    "count": 3
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 45,
+            "wave_time": 20,
             "stories": [
                 "That was just the first wave of them. Our sensors detect even more of them coming...",
                 "That was just the first wave of them. Our scouts detect even more of them coming...",
@@ -44,7 +48,7 @@
                 },
                 {
                     "type": "crawler2",
-                    "count": 5
+                    "count": 4
                 },
                 {
                     "type": "arbiter",
@@ -52,11 +56,176 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 45,
+            "wave_time": 13,
             "stories": [
                 "Commander, stand guard! A larger threat has been spotted over the horizon!",
                 "Sir, stand guard! A larger threat has been spotted over the horizon!",
                 "Captain, stand guard! A larger threat has been spotted over the horizon!"
+            ]
+        },
+        {
+            "enemies": [
+                {
+                    "type": "crawler",
+                    "count": 6
+                },
+                {
+                    "type": "crawler2",
+                    "count": 6
+                },
+                {
+                    "type": "arbiter",
+                    "count": 3
+                }
+            ],
+            "spawn_time": 20,
+            "wave_time": 16,
+            "stories": [
+                "Wave 4 Text",
+                "Wave 4 Text",
+                "Wave 4 Text"
+            ]
+        },
+        {
+            "enemies": [
+                {
+                    "type": "crawler",
+                    "count": 5
+                },
+                {
+                    "type": "arbiter",
+                    "count": 2
+                },
+                {
+                    "type": "phoenix",
+                    "count": 4
+                }
+            ],
+            "spawn_time": 20,
+            "wave_time": 5,
+            "stories": [
+                "Wave 5 Text",
+                "Wave 5 Text",
+                "Wave 5 Text"
+            ]
+        },
+        {
+            "enemies": [
+                {
+                    "type": "crawler2",
+                    "count": 5
+                },
+                {
+                    "type": "arbiter",
+                    "count": 2
+                },
+                {
+                    "type": "phoenix",
+                    "count": 5
+                }
+            ],
+            "spawn_time": 20,
+            "wave_time": 43,
+            "stories": [
+                "Wave 6 Text",
+                "Wave 6 Text",
+                "Wave 6 Text"
+            ]
+        },
+        {
+            "enemies": [
+                {
+                    "type": "crawler2",
+                    "count": 5
+                },
+                {
+                    "type": "arbiter",
+                    "count": 1
+                },
+                {
+                    "type": "phoenix",
+                    "count": 2
+                },
+                {
+                    "type": "crawler2",
+                    "count": 5
+                },
+                {
+                    "type": "arbiter",
+                    "count": 1
+                },
+                {
+                    "type": "phoenix",
+                    "count": 2
+                }
+            ],
+            "spawn_time": 20,
+            "wave_time": 38,
+            "stories": [
+                "Wave 7 Text",
+                "Wave 7 Text",
+                "Wave 7 Text"
+            ]
+        },
+        {
+            "enemies": [
+                {
+                    "type": "arbiter",
+                    "count": 5
+                },
+                {
+                    "type": "phoenix",
+                    "count": 5
+                }
+            ],
+            "spawn_time": 20,
+            "wave_time": 70,
+            "stories": [
+                "Wave 8 Text",
+                "Wave 8 Text",
+                "Wave 8 Text"
+            ]
+        },
+        {
+            "enemies": [
+                {
+                    "type": "crawler2",
+                    "count": 30
+                }
+            ],
+            "spawn_time": 20,
+            "wave_time": 55,
+            "stories": [
+                "Wave 9 Text",
+                "Wave 9 Text",
+                "Wave 9 Text"
+            ]
+        },
+        {
+            "enemies": [
+                {
+                    "type": "crawler",
+                    "count": 10
+                },
+                {
+                    "type": "crawler2",
+                    "count": 10
+                },
+                {
+                    "type": "phoenix",
+                    "count": 10
+                },
+                {
+                    "type": "arbiter",
+                    "count": 5
+                }
+            ],
+            "spawn_time": 20,
+            "wave_time": 70,
+            "stories": [
+                "Wave 10 Text",
+                "Wave 10 Text",
+                "Wave 10 Text"
             ]
         }
     ]

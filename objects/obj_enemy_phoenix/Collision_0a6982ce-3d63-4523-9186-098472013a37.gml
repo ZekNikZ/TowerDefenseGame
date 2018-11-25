@@ -1,3 +1,7 @@
-other.hp -= 20;
+other.hp -= 15;
 
-instance_destroy();
+x -= lengthdir_x(5 * spd, direction);
+y -= lengthdir_y(5 * spd, direction);
+speed = 0;
+
+attack_counter = attack_cooldown;

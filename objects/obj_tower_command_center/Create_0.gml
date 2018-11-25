@@ -21,3 +21,5 @@ surge_energy = 0;
 st_current_storage = 500;
 
 tower_cost_deduction = 0;
+
+global.solar_counter = 0;

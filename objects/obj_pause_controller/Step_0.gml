@@ -3,5 +3,5 @@ if (keyboard_check_pressed(vk_escape) && !(game_paused && pause_type == PauseTyp
 }
 
 if (game_paused && pause_type == PauseType.NORMAL && keyboard_check_pressed(ord("Q"))) {
-	game_restart();
+	room_goto(rm_main_menu);
 }

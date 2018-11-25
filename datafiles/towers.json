@@ -59,6 +59,36 @@
             ],
             "cost": 2500,
             "health": 50
+        },
+        "water_wheel": {
+            "id": "water_wheel",
+            "names": [
+                "Water Wheel",
+                "Water Wheel",
+                "Water Wheel"
+            ],
+            "descriptions": [
+                "Water Wheel description",
+                "Water Wheel description",
+                "Water Wheel description"
+            ],
+            "cost": 1750,
+            "health": 40
+        },
+        "landmine": {
+            "id": "landmine",
+            "names": [
+                "Landmine",
+                "Landmine",
+                "Landmine"
+            ],
+            "descriptions": [
+                "Landmine description",
+                "Landmine description",
+                "Landmine description"
+            ],
+            "cost": 5000,
+            "health": 60
         }
     }
 }
