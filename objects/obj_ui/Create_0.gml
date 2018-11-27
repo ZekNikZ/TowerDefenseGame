@@ -6,6 +6,7 @@ selected_tower = -1;
 unlocked_towers_objs = ds_list_create();
 unlocked_towers_icons = ds_list_create();
 unlocked_towers_costs = ds_list_create();
+unlocked_towers_names = ds_list_create();
 
 towers[0] = "solar_collector";
 towers[1] = "water_wheel";
@@ -35,6 +36,7 @@ for (var i = 0; i < 5; i++) {
 		ds_list_add(unlocked_towers_objs, asset_get_index("obj_tower_" + towers[i]));
 		ds_list_add(unlocked_towers_icons, asset_get_index("spr_tower_" + towers[i] + "_" + string(game_theme)));
 		ds_list_add(unlocked_towers_costs, cost);
+		ds_list_add(unlocked_towers_names, ds_list_find_value(ds_map_find_value(ds_map_find_value(tower_info, towers[i]), "names"), game_theme));
 	}
 }
 
