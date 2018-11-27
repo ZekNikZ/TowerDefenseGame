@@ -35,9 +35,12 @@
             "spawn_time": 20,
             "wave_time": 17,
             "stories": [
-                "That was just the first wave of them. Our sensors detect even more of them coming...",
-                "That was just the first wave of them. Our scouts detect even more of them coming...",
-                "That was just the first wave of them. Our sensors detect even more of them coming..."
+                "That was just the first wave of them. Our sensors detect even more of them coming. It must be an invasion!",
+                "That was just the first wave of them. Our scouts detect even more of them coming. It must be an invasion!",
+                "That was just the first wave of them. Our sensors detect even more of them coming. It must be an invasion!",
+                "Make sure to plan your strategy well. Each structure type gets more expensive over time.",
+                "Make sure to plan your strategy well. Each structure type gets more expensive over time.",
+                "Make sure to plan your strategy well. Each structure type gets more expensive over time."
             ]
         },
         {
@@ -81,9 +84,12 @@
             "spawn_time": 20,
             "wave_time": 20,
             "stories": [
-                "Wave 4 Text",
-                "Wave 4 Text",
-                "Wave 4 Text"
+                "Commander, that large robot dropped a stone tablet. Apparently, these robots are displaced from a planet called Aiur.",
+                "Sir, that large robot dropped a stone tablet. Apparently, these robots are displaced from a planet called Aiur.",
+                "Captain, that large robot dropped a stone tablet. Apparently, these robots are displaced from a planet called Aiur.",
+                "They are trying to reclaim land in order to settle in. They will stop at nothing to do so! See, more are coming!",
+                "They are trying to reclaim land in order to settle in. They will stop at nothing to do so! See, more are coming!",
+                "They are trying to reclaim land in order to settle in. They will stop at nothing to do so! See, more are coming!"
             ]
         },
         {
@@ -104,9 +110,9 @@
             "spawn_time": 20,
             "wave_time": 21,
             "stories": [
-                "Wave 5 Text",
-                "Wave 5 Text",
-                "Wave 5 Text"
+                "Watch the skies! Our sensors detect multiple robots coming from the skies...",
+                "Watch the skies! Our scouts detect multiple beings coming from the skies...",
+                "Watch the skies! Our sensors detect multiple androids coming from the skies..."
             ]
         },
         {
@@ -127,9 +133,12 @@
             "spawn_time": 20,
             "wave_time": 19,
             "stories": [
-                "Wave 6 Text",
-                "Wave 6 Text",
-                "Wave 6 Text"
+                "Commander, it seems like they are trying harder. Reinforcements are coming from the horizon.",
+                "Sir, it seems like they are trying harder. Reinforcements are coming from the horizon.",
+                "Captain, it seems like they are trying harder. Reinforcements are coming from the horizon.",
+                "We are sending a diplomat to them to try and negotiate peace. Protect us in the meantime!",
+                "We are sending a diplomat to them to try and negotiate peace. Protect us in the meantime!",
+                "We are sending a diplomat to them to try and negotiate peace. Protect us in the meantime!"
             ]
         },
         {
@@ -162,9 +171,12 @@
             "spawn_time": 20,
             "wave_time": 20,
             "stories": [
-                "Wave 7 Text",
-                "Wave 7 Text",
-                "Wave 7 Text"
+                "Commander! They killed our diplomat!",
+                "Sir! They killed our diplomat!",
+                "Captain! They killed our diplomat!",
+                "According to our spies, they are sending another invading army in retaliation!",
+                "According to our spies, they are sending another invading army in retaliation!",
+                "According to our spies, they are sending another invading army in retaliation!"
             ]
         },
         {
@@ -181,9 +193,9 @@
             "spawn_time": 20,
             "wave_time": 21,
             "stories": [
-                "Wave 8 Text",
-                "Wave 8 Text",
-                "Wave 8 Text"
+                "Commander, our sensors detect a large presence over the horizons...",
+                "Sir, our scouts detect a large presence over the horizons...",
+                "Captain, our sensors detect a large presence over the horizons..."
             ]
         },
         {
@@ -196,9 +208,15 @@
             "spawn_time": 20,
             "wave_time": 20,
             "stories": [
-                "Wave 9 Text",
-                "Wave 9 Text",
-                "Wave 9 Text"
+                "Bad news, Commander. With that last push they sent a message which we decoded:",
+                "Bad news, Sir. With that last push they sent a message which we decoded:",
+                "Bad news, Captain. With that last push they sent a message which we decoded:",
+                "\"We will not back down. We will never stop until our people have a home. Prepare for battle!\"",
+                "\"We will not back down. We will never stop until our people have a home. Prepare for battle!\"",
+                "\"We will not back down. We will never stop until our people have a home. Prepare for battle!\"",
+                "Commander, here they come! Be careful!",
+                "Sir, here they come! Be careful!",
+                "Captain, here they come! Be careful!"
             ]
         },
         {
@@ -223,9 +241,9 @@
             "spawn_time": 20,
             "wave_time": 5,
             "stories": [
-                "Wave 10 Text",
-                "Wave 10 Text",
-                "Wave 10 Text"
+                "This is it! They are sending everything that they have. Hold out for just a little while longer!",
+                "This is it! They are sending everything that they have. Hold out for just a little while longer!",
+                "This is it! They are sending everything that they have. Hold out for just a little while longer!"
             ]
         }
     ]

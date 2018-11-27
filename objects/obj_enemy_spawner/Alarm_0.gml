@@ -7,7 +7,7 @@ switch (wave_state) {
 		if (wave_num < ds_list_size(wave_info)) {
 			alarm_set(SPAWN_ALARM, ds_map_find_value(wave_info[| wave_num], "spawn_time") * 2);
 		} else {
-			alarm_set(2, 180);
+			alarm_set(2, 1);
 		}
 		break;
 	case WAVE_STATE.SETUP:
@@ -17,7 +17,12 @@ switch (wave_state) {
 	case WAVE_STATE.ATTACK:
 		wave_state = WAVE_STATE.BETWEEN;
 		++wave_num;
-		alarm_set(WAVE_ALARM, between_wave_time);
+		
+		if (wave_num < ds_list_size(wave_info)) {
+			alarm_set(WAVE_ALARM, between_wave_time);
+		} else {
+			alarm_set(2, 1);
+		}
 		event_user(1);
 		break;
 }
