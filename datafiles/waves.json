@@ -8,7 +8,7 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 15,
+            "wave_time": 16,
             "stories": [
                 "Commander, you arrived just in time. We need your help! There are extraterrestrial robots which threaten our safety. Build up our defenses so that we may survive! Hurry!",
                 "Sir, you arrived just in time. We need your help! There are extraterrestrial mechanical beings which threaten our safety. Build up our defenses so that we may survive! Hurry!",
@@ -33,7 +33,7 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 13,
+            "wave_time": 14,
             "stories": [
                 "That was just the first wave of them. Our sensors detect even more of them coming...",
                 "That was just the first wave of them. Our scouts detect even more of them coming...",
@@ -56,7 +56,7 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 20,
+            "wave_time": 22,
             "stories": [
                 "Commander, stand guard! A larger threat has been spotted over the horizon!",
                 "Sir, stand guard! A larger threat has been spotted over the horizon!",
@@ -79,7 +79,7 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 18,
+            "wave_time": 19,
             "stories": [
                 "Wave 4 Text",
                 "Wave 4 Text",
@@ -102,7 +102,7 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 14,
+            "wave_time": 16,
             "stories": [
                 "Wave 5 Text",
                 "Wave 5 Text",
@@ -125,7 +125,7 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 17,
+            "wave_time": 18,
             "stories": [
                 "Wave 6 Text",
                 "Wave 6 Text",
@@ -160,7 +160,7 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 17,
+            "wave_time": 18,
             "stories": [
                 "Wave 7 Text",
                 "Wave 7 Text",
@@ -179,7 +179,7 @@
                 }
             ],
             "spawn_time": 20,
-            "wave_time": 18,
+            "wave_time": 20,
             "stories": [
                 "Wave 8 Text",
                 "Wave 8 Text",

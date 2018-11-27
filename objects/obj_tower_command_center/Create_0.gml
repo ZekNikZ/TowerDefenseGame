@@ -18,7 +18,7 @@ system_total_storage = 0;
 energy_to_use = 0;
 surge_energy = 0;
 
-st_current_storage = 500;
+st_current_storage = 499;
 
 tower_cost_deduction = 0;
 

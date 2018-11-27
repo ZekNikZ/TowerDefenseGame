@@ -31,6 +31,11 @@ if (selected_tower != -1 && instance_exists(selected_tower)) {
 	var ax = tx + 300;
 	
 	// Icon
+	draw_set_alpha(0.1);
+	draw_set_color(c_white);
+	draw_rectangle(zx + ox - 33 * scale, zy + oy - 33 * scale, zx + ox + 33 * scale, zy + oy + 33 * scale, false);
+	draw_set_alpha(1);
+	
 	draw_sprite_ext(selected_tower.sprite_index, -1, zx + ox, zy + oy, scale, scale, selected_tower.image_angle, c_white, 1);
 	
 	// Text
@@ -108,19 +113,32 @@ for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
 	} else {
 		draw_set_color(c_red);
 	}
+	
+	draw_text(zx + tower_button_sprite_padding * width + 27, zy + oy * 2 + 5, unlocked_towers_costs[| i]);
 
 	// Tower button checking
-	if (click) {
-		if (zy <= window_mouse_get_y() && window_mouse_get_y() <= zy + oy * 2 + 30) {
+	if (zy <= window_mouse_get_y() && window_mouse_get_y() <= zy + oy * 2 + 30) {
+		if (click) {
 			obj_cursor.tower_type = unlocked_towers_objs[| i];
 			obj_cursor.tower_icon = unlocked_towers_icons[| i];
 			obj_cursor.mode = CursorMode.PLACE;
 			obj_cursor.tower_cost = unlocked_towers_costs[| i];
+			obj_cursor.tower_index = i;
 			//show_debug_message(obj_cursor.tower_cost);
 		}
+		if (zx <= window_mouse_get_x()) {
+			draw_set_font(fnt_ui_tower_attr);
+			draw_set_alpha(0.5);
+			draw_set_color(c_black);
+			draw_roundrect_ext(window_mouse_get_x() - string_width(unlocked_towers_names[| i]) - 12, window_mouse_get_y() - 30, window_mouse_get_x(), window_mouse_get_y(), 12, 12, false);
+			draw_set_alpha(1);
+			draw_set_color(c_white);
+			draw_roundrect_ext(window_mouse_get_x() - string_width(unlocked_towers_names[| i]) - 12, window_mouse_get_y() - 30, window_mouse_get_x(), window_mouse_get_y(), 12, 12, true);
+			draw_set_halign(fa_right);
+			draw_text_ext(window_mouse_get_x() - 6, window_mouse_get_y() + 4 - 30, unlocked_towers_names[| i], 20, 450);
+			draw_set_halign(fa_left);
+		}
 	}
-	
-	draw_text(zx + tower_button_sprite_padding * width + 27, zy + oy * 2 + 5, unlocked_towers_costs[| i]);
 	
 	tower_button_offset += oy * 2 + 35;
 }
@@ -133,6 +151,12 @@ draw_set_font(fnt_ui_tower_attr);
 draw_set_color(c_white);
 
 draw_text(game_controls_width * width / 2, height - bottom_height * height + 30, "Wave " + string(obj_enemy_spawner.wave_num + 1));
+
+if (game_theme != Theme.MEDIVAL) {
+	draw_text(game_controls_width * width / 2, height - bottom_height * height + 90, "Time: " + string_replace(string_format(floor(global.solar_counter / 450 * 24) % 24, 2, 0), " ", "0") + ":" + string_replace(string_format(floor(global.solar_counter / 450 * 24 * 60) % 60, 2, 0), " ", "0"));
+} else {
+	draw_text(game_controls_width * width / 2, height - bottom_height * height + 90, "Day: " + string(floor(global.solar_counter / 450 * 365) % 365));
+}
 
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);

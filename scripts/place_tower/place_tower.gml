@@ -7,6 +7,7 @@ with(obj_cursor){
 			mode = CursorMode.SELECT;
 			sprite_index = noone;
 			obj_tower_command_center.tower_cost_deduction += tower_cost;
+			obj_ui.unlocked_towers_costs[| tower_index] += 350;
 		}
 	} else if (click) {
 		mode = CursorMode.SELECT;

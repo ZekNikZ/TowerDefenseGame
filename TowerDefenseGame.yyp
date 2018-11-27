@@ -1996,6 +1996,25 @@
             }
         },
         {
+            "Key": "9a5ca003-34f4-4343-964d-e8917d3595da",
+            "Value": {
+                "id": "f0111e93-b38c-49a0-ad61-f0e0a64cb71a",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "shaders\/sdr_whiteout\/sdr_whiteout.yy",
+                "resourceType": "GMShader"
+            }
+        },
+        {
             "Key": "9a767b15-30d0-420d-a6a5-6c37bd551f2f",
             "Value": {
                 "id": "41de7909-d89f-4f58-a6e4-6429ada6283f",

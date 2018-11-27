@@ -63,14 +63,14 @@
         "water_wheel": {
             "id": "water_wheel",
             "names": [
+                "Oil Rig",
                 "Water Wheel",
-                "Water Wheel",
-                "Water Wheel"
+                "Hydrogen extractor"
             ],
             "descriptions": [
-                "Water Wheel description",
-                "Water Wheel description",
-                "Water Wheel description"
+                "This rig extracts oil from below the water's surface, generating a constant amount of energy.",
+                "This wheel turns along with the movement of water, generating a constant amount of energy.",
+                "This structure extracts hydrogen from water, generating a constant amount of energy."
             ],
             "cost": 1750,
             "health": 40
@@ -78,14 +78,14 @@
         "landmine": {
             "id": "landmine",
             "names": [
-                "Landmine",
-                "Landmine",
-                "Landmine"
+                "Landmine Deployer",
+                "Bomb Tower",
+                "Proximity Mine Deployer"
             ],
             "descriptions": [
-                "Landmine description",
-                "Landmine description",
-                "Landmine description"
+                "This tower periodically deploys landmines which hurt incoming enemies.",
+                "This tower periodically deploys bombs which hurt incoming enemies.",
+                "This tower periodically deploys proximity mines which hurt incoming enemies."
             ],
             "cost": 5000,
             "health": 60
