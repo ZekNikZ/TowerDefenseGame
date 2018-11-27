@@ -65,7 +65,7 @@
             "names": [
                 "Oil Rig",
                 "Water Wheel",
-                "Hydrogen extractor"
+                "Hydrogen Extractor"
             ],
             "descriptions": [
                 "This rig extracts oil from below the water's surface, generating a constant amount of energy.",

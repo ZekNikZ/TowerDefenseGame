@@ -1,4 +1,4 @@
-other.hp -= 20;
+other.hp -= 40;
 
 x -= lengthdir_x(5 * spd, direction);
 y -= lengthdir_y(5 * spd, direction);
