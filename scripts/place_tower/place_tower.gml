@@ -8,6 +8,7 @@ with(obj_cursor){
 			sprite_index = noone;
 			obj_tower_command_center.tower_cost_deduction += tower_cost;
 			obj_ui.unlocked_towers_costs[| tower_index] += 350;
+			audio_play_sound(sfx_build, 0, false);
 		}
 	} else if (click) {
 		mode = CursorMode.SELECT;

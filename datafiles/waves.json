@@ -87,9 +87,9 @@
                 "Commander, that large robot dropped a stone tablet. Apparently, these robots are displaced from a planet called Aiur.",
                 "Sir, that large robot dropped a stone tablet. Apparently, these robots are displaced from a planet called Aiur.",
                 "Captain, that large robot dropped a stone tablet. Apparently, these robots are displaced from a planet called Aiur.",
-                "They are trying to reclaim land in order to settle in. They will stop at nothing to do so! See, more are coming!",
-                "They are trying to reclaim land in order to settle in. They will stop at nothing to do so! See, more are coming!",
-                "They are trying to reclaim land in order to settle in. They will stop at nothing to do so! See, more are coming!"
+                "They are trying to take over land in order to settle in. They will stop at nothing to do so! See, more are coming!",
+                "They are trying to take over land in order to settle in. They will stop at nothing to do so! See, more are coming!",
+                "They are trying to take over land in order to settle in. They will stop at nothing to do so! See, more are coming!"
             ]
         },
         {
@@ -110,9 +110,9 @@
             "spawn_time": 20,
             "wave_time": 21,
             "stories": [
-                "Watch the skies! Our sensors detect multiple robots coming from the skies...",
-                "Watch the skies! Our scouts detect multiple beings coming from the skies...",
-                "Watch the skies! Our sensors detect multiple androids coming from the skies..."
+                "Watch the skies! Our sensors detect multiple robots coming from above...",
+                "Watch the skies! Our scouts detect multiple beings coming from above...",
+                "Watch the skies! Our sensors detect multiple androids coming from above..."
             ]
         },
         {
@@ -193,9 +193,9 @@
             "spawn_time": 20,
             "wave_time": 21,
             "stories": [
-                "Commander, our sensors detect a large presence over the horizons...",
-                "Sir, our scouts detect a large presence over the horizons...",
-                "Captain, our sensors detect a large presence over the horizons..."
+                "Commander, our sensors detect a large presence on the horizon...",
+                "Sir, our scouts detect a large presence on the horizon...",
+                "Captain, our sensors detect a large presence on the horizon..."
             ]
         },
         {
