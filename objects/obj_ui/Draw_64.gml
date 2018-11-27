@@ -116,6 +116,7 @@ for(var i = 0; i < ds_list_size(unlocked_towers_objs); ++i) {
 			obj_cursor.tower_icon = unlocked_towers_icons[| i];
 			obj_cursor.mode = CursorMode.PLACE;
 			obj_cursor.tower_cost = unlocked_towers_costs[| i];
+			obj_cursor.tower_index = i;
 			//show_debug_message(obj_cursor.tower_cost);
 		}
 	}

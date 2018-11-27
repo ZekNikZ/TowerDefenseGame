@@ -24,13 +24,18 @@ with(obj_cursor) {
 					sprite_index = spr_too_close;
 				}
 			} else {
-				can_place = true;
-				place_tower();
-				break;
+				if (tower_type == obj_tower_water_wheel) {
+					can_place = false;
+					sprite_index = spr_too_close;
+				} else {
+					can_place = true;
+					place_tower();
+					break;
+				}
 			}
-			can_place = true;
-			place_tower();
-			break;
+			//can_place = true;
+			//place_tower();
+			//break;
 		} else if (click) {
 			mode = CursorMode.SELECT;
 			sprite_index = noone;
@@ -39,6 +44,14 @@ with(obj_cursor) {
 			if (!in_range && instance_exists(nearest_tower) && point_distance(x,y,nearest_tower.x,nearest_tower.y) < nearest_tower.place_range) {
 				in_range = true;
 			}
+			if (tower_type == obj_tower_water_wheel && in_range) {
+				if (tile_get_index(tilemap_get_at_pixel(tilemap_id, x, y)) >= 4) {
+					in_range = true;
+				} else {
+					in_range = false;
+				}
+			}
+			
 			if (in_range) sprite_index = spr_no_power;
 			else sprite_index = spr_too_close;
 			can_place = false;
