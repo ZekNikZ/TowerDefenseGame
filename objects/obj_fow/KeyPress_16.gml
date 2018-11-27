@@ -1,1 +1,1 @@
-fog_visible = !fog_visible;
+//fog_visible = !fog_visible;
