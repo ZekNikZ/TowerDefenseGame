@@ -191,6 +191,25 @@
             }
         },
         {
+            "Key": "081a4bea-ca7f-4a9b-84a3-dc7296969324",
+            "Value": {
+                "id": "d8db60d9-f11a-48d8-9d80-ef984e7eeef2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sounds\/sfx_bomb_arm\/sfx_bomb_arm.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "08fc40ab-0111-4869-9e54-b6cc372ee886",
             "Value": {
                 "id": "c8a57b35-2379-4a8f-9ae6-2c45b7749eee",
@@ -624,6 +643,25 @@
                     "default"
                 ],
                 "resourcePath": "sprites\/spr_type_unknown\/spr_type_unknown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "268fb5fd-d883-46db-a342-ea412a5f2539",
+            "Value": {
+                "id": "24ac03c5-1c6d-4f50-bb86-f69610e89da2",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_landmine_2\/spr_landmine_2.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1464,6 +1502,25 @@
             }
         },
         {
+            "Key": "5f0ea29c-f633-4c8a-8e4b-253e4cc36289",
+            "Value": {
+                "id": "eed13115-c618-4687-b96b-ee7cee33868b",
+                "modelName": "GMResourceInfo",
+                "mvc": "1.0",
+                "configDeltaFiles": [
+                    
+                ],
+                "configDeltas": [
+                    
+                ],
+                "resourceCreationConfigs": [
+                    "default"
+                ],
+                "resourcePath": "sprites\/spr_landmine_1\/spr_landmine_1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "65c86af7-6ccd-4e94-a799-9d121bc3aecf",
             "Value": {
                 "id": "b99de5c3-2c81-4bc1-b375-1f9021d69373",
@@ -1516,7 +1573,7 @@
                 "resourceCreationConfigs": [
                     "default"
                 ],
-                "resourcePath": "sprites\/spr_landmine\/spr_landmine.yy",
+                "resourcePath": "sprites\/spr_landmine_0\/spr_landmine_0.yy",
                 "resourceType": "GMSprite"
             }
         },
